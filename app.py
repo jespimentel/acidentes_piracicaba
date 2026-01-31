@@ -10,7 +10,7 @@ st.set_page_config(page_title="Análise de Sentenças", layout="wide")
 st.title("100 Acidentes de Trânsito em Piracicaba")
 st.subheader("Visualização Georreferenciada de Sentenças")
 
-# 1. Função para carregar e limpar os dados (devido ao problema das vírgulas no CSV original)
+# 1. Função para carregar e limpar os dados
 @st.cache_data
 def load_data():
     file_path = 'sentencas_georreferenciadas.csv'
@@ -20,11 +20,8 @@ def load_data():
         for line in f:
             parts = line.strip().split(',')
             if len(parts) < 6: continue
-            
-            # Reconstrução lógica: 
-            # Primeiro item: WKT, Segundo: Processo, Terceiro: Data
-            # Últimos dois: Lat/Lon
-            # O que sobrar no meio é a conduta_culposa
+
+            # Extraindo campos relevantes        
             wkt = parts[0]
             processo = parts[1]
             data_fato = parts[2]
@@ -64,20 +61,5 @@ elif tipo_mapa == "Mapa de Calor":
     heat_data = [[row['lat'], row['lon']] for _, row in df.iterrows()]
     HeatMap(heat_data).add_to(mapa)
     
-    # Opcional: Adicionar marcadores invisíveis apenas para os pop-ups no heatmap
-    for _, row in df.iterrows():
-        popup_text = f"<b>Conduta:</b> {row['Conduta_Culposa']}"
-        folium.CircleMarker(
-            location=[row['lat'], row['lon']],
-            radius=1,
-            color='transparent',
-            fill=False,
-            popup=folium.Popup(popup_text, max_width=300)
-        ).add_to(mapa)
-
 # 4. Exibição no Streamlit
 st_folium(mapa, width=1200, height=600, returned_objects=[])
-
-# Exibir tabela de dados opcionalmente
-if st.checkbox("Mostrar dados brutos"):
-    st.write(df)

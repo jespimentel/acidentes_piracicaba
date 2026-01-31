@@ -2,4 +2,4 @@
 
 ## Visão georreferenciada de Sentenças
 
-Aplicação Streamlit baseada em dados extraídos de sentenças judiciais.
+Aplicação Streamlit para a plotagem de dados extraídos de sentenças judiciais de "Crimes de Trânsito" das Varas Criminais de Piracicaba.
