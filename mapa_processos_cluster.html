@@ -1,0 +1,4023 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2650dc9370469ae1dd91453715ff652b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2650dc9370469ae1dd91453715ff652b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2650dc9370469ae1dd91453715ff652b = L.map(
+                "map_2650dc9370469ae1dd91453715ff652b",
+                {
+                    center: [-22.7801, -47.66],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_95f858c19751bc0dc8a9c131b5110392 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_95f858c19751bc0dc8a9c131b5110392.addTo(map_2650dc9370469ae1dd91453715ff652b);
+        
+    
+            var marker_cluster_32c4d6d4195a215b77277b65dd675f58 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_104dc4ad6590ba2e5aeaf2fbf85b5ecf = L.marker(
+                [-22.7406217, -47.644175],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_c23a6cd7feeeb4c49d2822f89b596a2b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd5a6e2f549cab2084a2f76b8c8ac534 = $(`<div id="html_dd5a6e2f549cab2084a2f76b8c8ac534" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1502313-93.2022.8.26.0451<br><b>Conduta:</b> O condutor não observou o dever de cuidado ao não efetuar parada completa no sinal de PARE, apenas reduziu a velocidade e prosseguiu sem verificar a presença de pedestres. Olhou apenas para a esquerda em busca de veículos, desconsiderando pedestres vindo da calçada/por trás de um poste. Mantinha cerca de 50 km/h e não freou a tempo, evidenciando imprudência e negligência na condução.</div>`)[0];
+                popup_c23a6cd7feeeb4c49d2822f89b596a2b.setContent(html_dd5a6e2f549cab2084a2f76b8c8ac534);
+            
+        
+
+        marker_104dc4ad6590ba2e5aeaf2fbf85b5ecf.bindPopup(popup_c23a6cd7feeeb4c49d2822f89b596a2b)
+        ;
+
+        
+    
+    
+            marker_104dc4ad6590ba2e5aeaf2fbf85b5ecf.bindTooltip(
+                `<div>
+                     Processo 1502313-93.2022.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_771afda6a663408d52ec775ab6f590c8 = L.marker(
+                [-22.6862292, -47.6723795],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_0af45f17131cba2c3004e7c3c8f86b0e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_546d1ded595995de33c5805ae97c8ccf = $(`<div id="html_546d1ded595995de33c5805ae97c8ccf" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1501240-52.2023.8.26.0451<br><b>Conduta:</b> Não se aplica</div>`)[0];
+                popup_0af45f17131cba2c3004e7c3c8f86b0e.setContent(html_546d1ded595995de33c5805ae97c8ccf);
+            
+        
+
+        marker_771afda6a663408d52ec775ab6f590c8.bindPopup(popup_0af45f17131cba2c3004e7c3c8f86b0e)
+        ;
+
+        
+    
+    
+            marker_771afda6a663408d52ec775ab6f590c8.bindTooltip(
+                `<div>
+                     Processo 1501240-52.2023.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_80d1174651e763692543472c4c4ae1ae = L.marker(
+                [-22.6149012, -47.7446687],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_a89b2588d560f1d2b9c64e31b7da4d8f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95de0b532d7e2c61289f4098fed7fd29 = $(`<div id="html_95de0b532d7e2c61289f4098fed7fd29" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1510468-51.2023.8.26.0451<br><b>Conduta:</b> O acusado (A.A.F.) conduzia veículo em velocidade excessiva em estrada vicinal urbana, não adotando cautela necessária diante de ciclistas, o que, por imprudência e negligência, resultou em colisão que lançou a vítima sobre o capô e quebrou o para-brisa. Após o atropelamento, evadiu-se do local sem prestar socorro e tentou ocultar danos no veículo, demonstrando omissão do dever de cuidado e intenção de ocultar a autoria.</div>`)[0];
+                popup_a89b2588d560f1d2b9c64e31b7da4d8f.setContent(html_95de0b532d7e2c61289f4098fed7fd29);
+            
+        
+
+        marker_80d1174651e763692543472c4c4ae1ae.bindPopup(popup_a89b2588d560f1d2b9c64e31b7da4d8f)
+        ;
+
+        
+    
+    
+            marker_80d1174651e763692543472c4c4ae1ae.bindTooltip(
+                `<div>
+                     Processo 1510468-51.2023.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e2f386ae7a4392f3c8fea5f76af2c29d = L.marker(
+                [-22.7135871, -47.6532362],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_a20da7a57bf5b8cbc40c5423033724cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70cbb37196df3cfd027d422a449be695 = $(`<div id="html_70cbb37196df3cfd027d422a449be695" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1502522-67.2019.8.26.0451<br><b>Conduta:</b> Colisão frontal em curva acentuada, em trecho com faixa dupla contínua; perícia indica que tanto o automóvel quanto a motocicleta derivaram à esquerda, invadindo levemente a faixa contrária. A invasão da contramão em local proibido configura imprudência grave, reduzindo a margem de segurança e causando o impacto. Além disso, o condutor do automóvel evadiu-se sem prestar socorro, caracterizando omissão de socorro e agravando a conduta culposa, embora a prova não tenha sido conclusiva para condenação.</div>`)[0];
+                popup_a20da7a57bf5b8cbc40c5423033724cb.setContent(html_70cbb37196df3cfd027d422a449be695);
+            
+        
+
+        marker_e2f386ae7a4392f3c8fea5f76af2c29d.bindPopup(popup_a20da7a57bf5b8cbc40c5423033724cb)
+        ;
+
+        
+    
+    
+            marker_e2f386ae7a4392f3c8fea5f76af2c29d.bindTooltip(
+                `<div>
+                     Processo 1502522-67.2019.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7a300c94fc9c04e3a93a625651a14574 = L.marker(
+                [-22.7570284, -47.6091793],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_f2f59e058a7aa683892d883db4ee3025 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe2f7087f0274a89e97b4f358011ec12 = $(`<div id="html_fe2f7087f0274a89e97b4f358011ec12" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1509412-80.2023.8.26.0451<br><b>Conduta:</b> O acidente decorreu da imprudência e negligência do réu: após colidir com veículo estacionado não parou e ignorou pessoas que corriam ao lado do caminhão, deixando de prestar socorro. Conduzia o veículo com tacógrafo inoperante e três pneus em más condições, comprometendo a frenagem. Ao prosseguir acelerando com pessoas próximas e um ocupante segurando-se no estribo, assumiu risco previsível de atropelamento, resultando na morte.</div>`)[0];
+                popup_f2f59e058a7aa683892d883db4ee3025.setContent(html_fe2f7087f0274a89e97b4f358011ec12);
+            
+        
+
+        marker_7a300c94fc9c04e3a93a625651a14574.bindPopup(popup_f2f59e058a7aa683892d883db4ee3025)
+        ;
+
+        
+    
+    
+            marker_7a300c94fc9c04e3a93a625651a14574.bindTooltip(
+                `<div>
+                     Processo 1509412-80.2023.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8e5c44d64969c1c526b47cf2e30b0fc1 = L.marker(
+                [-22.6682281, -47.623536],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_1bd44e71d29949ac247cfcefb934ece7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d51531396e0484ad24b184e5ad526ef5 = $(`<div id="html_d51531396e0484ad24b184e5ad526ef5" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0008450-83.2013.8.26.0451<br><b>Conduta:</b> Não se aplica</div>`)[0];
+                popup_1bd44e71d29949ac247cfcefb934ece7.setContent(html_d51531396e0484ad24b184e5ad526ef5);
+            
+        
+
+        marker_8e5c44d64969c1c526b47cf2e30b0fc1.bindPopup(popup_1bd44e71d29949ac247cfcefb934ece7)
+        ;
+
+        
+    
+    
+            marker_8e5c44d64969c1c526b47cf2e30b0fc1.bindTooltip(
+                `<div>
+                     Processo 0008450-83.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4ec342022fe0c03ee82b85cd08704152 = L.marker(
+                [-22.853733, -47.6836766],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_72f8dcea03cc99fc75911276357361ee = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a063605cce8dc15354b1869c0ebe671b = $(`<div id="html_a063605cce8dc15354b1869c0ebe671b" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1500310-80.2020.8.26.0599<br><b>Conduta:</b> O acidente ocorreu porque o condutor (R.A.T.) dirigiu com a capacidade psicomotora alterada por álcool (1,22 mg/L), confessando ingestão antes de sair. Em razão da embriaguez perdeu o controle do veículo e capotou. Embora alegasse colisão por tentativa de ultrapassagem de caminhão, provas e testemunhos policiais apontam a condução sob efeito de álcool como fator determinante. A conduta culposa consiste em ter assumido o risco e violado o dever de cuidado ao dirigir embriagado.</div>`)[0];
+                popup_72f8dcea03cc99fc75911276357361ee.setContent(html_a063605cce8dc15354b1869c0ebe671b);
+            
+        
+
+        marker_4ec342022fe0c03ee82b85cd08704152.bindPopup(popup_72f8dcea03cc99fc75911276357361ee)
+        ;
+
+        
+    
+    
+            marker_4ec342022fe0c03ee82b85cd08704152.bindTooltip(
+                `<div>
+                     Processo 1500310-80.2020.8.26.0599
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bdacf4d41f80d1c61afc64f234111ec3 = L.marker(
+                [-22.7164884, -47.6383124],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_bca49d42fefd4e3da93edea11b724926 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_860470d04299e8b53d5ed5f7796a829f = $(`<div id="html_860470d04299e8b53d5ed5f7796a829f" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1509069-26.2019.8.26.0451<br><b>Conduta:</b> O condutor ingeriu bebida alcoólica e, com capacidade psicomotora alterada (0,37 mg/L, hálito etílico, olhos avermelhados, voz pastosa, andar cambaleante), assumiu a direção, dirigindo em alta velocidade, com som alto e derrapando pneus; não atendeu à ordem de parada e projetou o veículo contra policiais. A combinação de embriaguez, condução agressiva e desobediência criou o risco e caracterizou a conduta culposa.</div>`)[0];
+                popup_bca49d42fefd4e3da93edea11b724926.setContent(html_860470d04299e8b53d5ed5f7796a829f);
+            
+        
+
+        marker_bdacf4d41f80d1c61afc64f234111ec3.bindPopup(popup_bca49d42fefd4e3da93edea11b724926)
+        ;
+
+        
+    
+    
+            marker_bdacf4d41f80d1c61afc64f234111ec3.bindTooltip(
+                `<div>
+                     Processo 1509069-26.2019.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2c2aae1c72d60d784eabcdf6f5afb4d3 = L.marker(
+                [-22.7122627, -47.6470704],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_32af9cc8481ed20a22f066e3e6431b7e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b21941a318ea3e287a0d838764f30b1f = $(`<div id="html_b21941a318ea3e287a0d838764f30b1f" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1501753-88.2021.8.26.0451<br><b>Conduta:</b> A conduta culposa decorreu da ultrapassagem pela esquerda realizada pela ré (M.P.C.) com distância reduzida em relação ao ciclista (A.C.S.), seguida de conversão à direita sem sinalização prévia, o que interceptou a trajetória da bicicleta e provocou a queda. A ré não manteve o dever objetivo de cuidado previsto no CTB perante o usuário não motorizado. Além disso, deixou de prestar socorro quando possível, agravando a omissão; sua condição de médica reforça o dever de assistência.</div>`)[0];
+                popup_32af9cc8481ed20a22f066e3e6431b7e.setContent(html_b21941a318ea3e287a0d838764f30b1f);
+            
+        
+
+        marker_2c2aae1c72d60d784eabcdf6f5afb4d3.bindPopup(popup_32af9cc8481ed20a22f066e3e6431b7e)
+        ;
+
+        
+    
+    
+            marker_2c2aae1c72d60d784eabcdf6f5afb4d3.bindTooltip(
+                `<div>
+                     Processo 1501753-88.2021.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5c6fcd383ec8b4081b659b53e64a98e2 = L.marker(
+                [-22.5400789, -47.7576363],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_d317d20e2b1372cbfd7776eecb5186c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d78cd8aac8fb3e02fe710cc25431ca76 = $(`<div id="html_d78cd8aac8fb3e02fe710cc25431ca76" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1500476-37.2021.8.26.0451<br><b>Conduta:</b> Segundo a denúncia e o laudo pericial, o condutor do automóvel invadiu a faixa contrária ao realizar ultrapassagem em trecho sinalizado com linha dupla contínua (proibido), interceptando a trajetória da motocicleta que seguia em sentido oposto. A manobra constitui imprudência e imperícia por ultrapassar em local proibido, resultando em colisão frontal e morte da vítima.</div>`)[0];
+                popup_d317d20e2b1372cbfd7776eecb5186c4.setContent(html_d78cd8aac8fb3e02fe710cc25431ca76);
+            
+        
+
+        marker_5c6fcd383ec8b4081b659b53e64a98e2.bindPopup(popup_d317d20e2b1372cbfd7776eecb5186c4)
+        ;
+
+        
+    
+    
+            marker_5c6fcd383ec8b4081b659b53e64a98e2.bindTooltip(
+                `<div>
+                     Processo 1500476-37.2021.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5e289dd36970b73f09fd7853bca72f68 = L.marker(
+                [-22.7213897, -47.644731],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_673a27d992373f9ba33d03f1f8c3869c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eff4a0ea8de304377eb19fc23d78047e = $(`<div id="html_eff4a0ea8de304377eb19fc23d78047e" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1543447-71.2020.8.26.0451<br><b>Conduta:</b> A colisão decorreu de uma manobra de ultrapassagem da motocicleta que, ao deixar a faixa da direita para a esquerda, adentrou à frente do veículo sem observar adequadamente o tráfego lateral. Houve imprudência e insuficiente verificação do espelho e da sinalização, colocando-se em risco. As provas não demonstraram com certeza a culpa do condutor do automóvel, que tentou frear, mas não evitou o impacto.</div>`)[0];
+                popup_673a27d992373f9ba33d03f1f8c3869c.setContent(html_eff4a0ea8de304377eb19fc23d78047e);
+            
+        
+
+        marker_5e289dd36970b73f09fd7853bca72f68.bindPopup(popup_673a27d992373f9ba33d03f1f8c3869c)
+        ;
+
+        
+    
+    
+            marker_5e289dd36970b73f09fd7853bca72f68.bindTooltip(
+                `<div>
+                     Processo 1543447-71.2020.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c6be1fed1fb6182d29a4c5d6f8bbba56 = L.marker(
+                [-22.6674994, -47.6826316],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_af6a4b58d8f595b250a6bba0c11237c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_417067869fa2162bbd33a0634eb02fd8 = $(`<div id="html_417067869fa2162bbd33a0634eb02fd8" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1503644-18.2019.8.26.0451<br><b>Conduta:</b> O evento ocorreu por condução com capacidade psicomotora alterada em razão do álcool (exame: 1,2 g/L), associada a direção imprudente e tentativa de fuga. O condutor não acatou ordem de parada, manobrou perigosamente quase atropelando familiares do denunciante e perdeu o controle ao cair em terreno baldio. A combinação de embriaguez, desrespeito a ordens e condução temerária gerou o risco de dano.</div>`)[0];
+                popup_af6a4b58d8f595b250a6bba0c11237c1.setContent(html_417067869fa2162bbd33a0634eb02fd8);
+            
+        
+
+        marker_c6be1fed1fb6182d29a4c5d6f8bbba56.bindPopup(popup_af6a4b58d8f595b250a6bba0c11237c1)
+        ;
+
+        
+    
+    
+            marker_c6be1fed1fb6182d29a4c5d6f8bbba56.bindTooltip(
+                `<div>
+                     Processo 1503644-18.2019.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0ce64ad92d2bb24ab2a7eacfceb60009 = L.marker(
+                [-22.7195122, -47.6545249],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_21c4d7eaa442ba88ed600ae4c6760582 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_010a85d61bb368aa14787c26d7b6dcde = $(`<div id="html_010a85d61bb368aa14787c26d7b6dcde" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1501965-53.2021.8.26.0599<br><b>Conduta:</b> Conduzia o veículo sob efeito de álcool e entorpecentes, com capacidade psicomotora alterada, em alta velocidade e em zigue-zague, subindo em calçadas e desrespeitando sinais sonoros/luminosos e ordens de abordagem. Ao tentar evadir-se pela contramão e acelerar, colidiu com vários veículos e com a motocicleta da guarda, causando o acidente. A conduta culposa decorre da direção perigosa, excesso de velocidade, desobediência e tentativa de fuga.</div>`)[0];
+                popup_21c4d7eaa442ba88ed600ae4c6760582.setContent(html_010a85d61bb368aa14787c26d7b6dcde);
+            
+        
+
+        marker_0ce64ad92d2bb24ab2a7eacfceb60009.bindPopup(popup_21c4d7eaa442ba88ed600ae4c6760582)
+        ;
+
+        
+    
+    
+            marker_0ce64ad92d2bb24ab2a7eacfceb60009.bindTooltip(
+                `<div>
+                     Processo 1501965-53.2021.8.26.0599
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c8a25acf30462d61e23c65915d26f7aa = L.marker(
+                [-22.6633394, -47.6996772],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_3da63d53e4065ec2c5789a8973bc9104 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de38eb7b742bf153301feb4ab681e9e0 = $(`<div id="html_de38eb7b742bf153301feb4ab681e9e0" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1501187-76.2020.8.26.0451<br><b>Conduta:</b> O acidente decorreu de imperícia e imprudência da condutora: ao sair do estacionamento fez conversão à direita e, por falta de prática na condução de veículo automático (há cerca de um mês), perdeu o domínio da direção; a direção não retornou à posição, o veículo ingressou na calçada e atingiu o pedestre por trás, causando lesões graves.</div>`)[0];
+                popup_3da63d53e4065ec2c5789a8973bc9104.setContent(html_de38eb7b742bf153301feb4ab681e9e0);
+            
+        
+
+        marker_c8a25acf30462d61e23c65915d26f7aa.bindPopup(popup_3da63d53e4065ec2c5789a8973bc9104)
+        ;
+
+        
+    
+    
+            marker_c8a25acf30462d61e23c65915d26f7aa.bindTooltip(
+                `<div>
+                     Processo 1501187-76.2020.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1bf367594d58515f1dea902f2cea7a2f = L.marker(
+                [-22.5112423, -47.7717544],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_f9e44c1717ef5be7caf2c4986b599925 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8eec949be7701da5d740e8f024a0b60e = $(`<div id="html_8eec949be7701da5d740e8f024a0b60e" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0005188-52.2018.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o condutor, sem habilitação, dirigia sob efeito de álcool (0,42 mg/L no etilômetro; 0,7 g/L no sangue), apresentando odor etílico e fala pastosa, e colidiu com veículo estacionado. A conduta culposa decorre da imprudência e negligência em conduzir alcoolizado e sem permissão, gerando risco previsível e dano efetivo.</div>`)[0];
+                popup_f9e44c1717ef5be7caf2c4986b599925.setContent(html_8eec949be7701da5d740e8f024a0b60e);
+            
+        
+
+        marker_1bf367594d58515f1dea902f2cea7a2f.bindPopup(popup_f9e44c1717ef5be7caf2c4986b599925)
+        ;
+
+        
+    
+    
+            marker_1bf367594d58515f1dea902f2cea7a2f.bindTooltip(
+                `<div>
+                     Processo 0005188-52.2018.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6a4dd434aed45c71456e856016744b81 = L.marker(
+                [-22.6706547, -47.69656000000001],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_97839c1a8eeb9044855f5e5bf65a6414 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69752807454e278468189676211bf40e = $(`<div id="html_69752807454e278468189676211bf40e" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1524669-53.2020.8.26.0451<br><b>Conduta:</b> A acusação imputou ao condutor imprudência (velocidade excessiva) e negligência (falta de atenção ao tráfego), além de dirigir sem habilitação, o que teria resultado no atropelamento de pedestre que atravessava fora da faixa. Contudo, a instrução indicou que a vítima entrou repentinamente na via e que não ficou comprovada velocidade incompatível do veículo, de modo que a culpa do condutor não foi demonstrada com segurança.</div>`)[0];
+                popup_97839c1a8eeb9044855f5e5bf65a6414.setContent(html_69752807454e278468189676211bf40e);
+            
+        
+
+        marker_6a4dd434aed45c71456e856016744b81.bindPopup(popup_97839c1a8eeb9044855f5e5bf65a6414)
+        ;
+
+        
+    
+    
+            marker_6a4dd434aed45c71456e856016744b81.bindTooltip(
+                `<div>
+                     Processo 1524669-53.2020.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_76dd93adfe555433f7f0f0a0ae5adcaa = L.marker(
+                [-22.7714944, -47.6290763],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_59650a51b32fb70cf955eb68b0feea60 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_177fb1c19057e37113250a3ed90f6e5f = $(`<div id="html_177fb1c19057e37113250a3ed90f6e5f" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0016577-39.2015.8.26.0451<br><b>Conduta:</b> O réu conduzia veículo sob forte influência de álcool (2,5 g/L) e, ao efetuar uma curva rente à calçada onde havia pedestre com um pé na via, perdeu o controle do automóvel, passando sobre o pé da vítima e arrastando-a. A imprudência na manobra, agravada pela embriaguez, caracterizou a conduta culposa que causou as lesões.</div>`)[0];
+                popup_59650a51b32fb70cf955eb68b0feea60.setContent(html_177fb1c19057e37113250a3ed90f6e5f);
+            
+        
+
+        marker_76dd93adfe555433f7f0f0a0ae5adcaa.bindPopup(popup_59650a51b32fb70cf955eb68b0feea60)
+        ;
+
+        
+    
+    
+            marker_76dd93adfe555433f7f0f0a0ae5adcaa.bindTooltip(
+                `<div>
+                     Processo 0016577-39.2015.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_abfd0c618ce4c70b638f7d2398c2ce0f = L.marker(
+                [-22.6862962, -47.6622193],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_2e6450e14898caab053fcac4800af329 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_92bb4087061b118587d789783ab57576 = $(`<div id="html_92bb4087061b118587d789783ab57576" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1540869-09.2018.8.26.0451<br><b>Conduta:</b> A ré conduziu veículo sob efeito de álcool (0,61 mg/L), comprometendo a capacidade psicomotora. Estacionou sem acionar o modo de imobilização do carro e, ao atender o celular/abaixar-se para pegar a bolsa, acionou inadvertidamente o acelerador, colidindo com veículo estacionado. A junção de dirigir alcoolizada e negligência/erro operacional caracterizou a conduta culposa que ocasionou o acidente.</div>`)[0];
+                popup_2e6450e14898caab053fcac4800af329.setContent(html_92bb4087061b118587d789783ab57576);
+            
+        
+
+        marker_abfd0c618ce4c70b638f7d2398c2ce0f.bindPopup(popup_2e6450e14898caab053fcac4800af329)
+        ;
+
+        
+    
+    
+            marker_abfd0c618ce4c70b638f7d2398c2ce0f.bindTooltip(
+                `<div>
+                     Processo 1540869-09.2018.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_30e57179f4baa972a1680ace32d81470 = L.marker(
+                [-22.7041077, -47.6553538],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_69eb37947731c229b032d3ec46fc6427 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ac273e98607c0ffa80dbd291272d043 = $(`<div id="html_2ac273e98607c0ffa80dbd291272d043" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0024302-21.2011.8.26.0451<br><b>Conduta:</b> O réu (J.D.P.O.) conduziu veículo com elevada concentração alcoólica (2,4 g/L), apresentando odor, fala e postura alterados, e retrocedeu lentamente ao sair de um cruzamento sinalizado por “PARE”, atingindo o carro que vinha atrás. A combinação de embriaguez, desatenção, ausência de cuidados na manobra e reflexos prejudicados configurou imprudência/negligência, sendo a causa direta do acidente e do dano.</div>`)[0];
+                popup_69eb37947731c229b032d3ec46fc6427.setContent(html_2ac273e98607c0ffa80dbd291272d043);
+            
+        
+
+        marker_30e57179f4baa972a1680ace32d81470.bindPopup(popup_69eb37947731c229b032d3ec46fc6427)
+        ;
+
+        
+    
+    
+            marker_30e57179f4baa972a1680ace32d81470.bindTooltip(
+                `<div>
+                     Processo 0024302-21.2011.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0f931f6fbc0a1ee82d12aaa21a2cfc06 = L.marker(
+                [-22.7407575, -47.6078433],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_d9a5030d388dd40fad588b0e5b918bfe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c22de10cf9f7b46d9542408e09f2ab1e = $(`<div id="html_c22de10cf9f7b46d9542408e09f2ab1e" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1502688-31.2021.8.26.0451<br><b>Conduta:</b> O réu conduziu veículo sem habilitação e em estado gravemente embriagado (3,4 g/L), após ingerir bebida alcoólica e emprestar o carro de amigo; perdeu o controle do veículo e colidiu contra o portão de condomínio. A imprudência e a embriaguez foram a causa direta do acidente e do dano.</div>`)[0];
+                popup_d9a5030d388dd40fad588b0e5b918bfe.setContent(html_c22de10cf9f7b46d9542408e09f2ab1e);
+            
+        
+
+        marker_0f931f6fbc0a1ee82d12aaa21a2cfc06.bindPopup(popup_d9a5030d388dd40fad588b0e5b918bfe)
+        ;
+
+        
+    
+    
+            marker_0f931f6fbc0a1ee82d12aaa21a2cfc06.bindTooltip(
+                `<div>
+                     Processo 1502688-31.2021.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5b594fe8397c64e77483e70f575c9831 = L.marker(
+                [-22.7126738, -47.6354285],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_bcc39d80ca5404c8b903a81a1f69ae2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_461e06c446c7b6e79b115162cadfab91 = $(`<div id="html_461e06c446c7b6e79b115162cadfab91" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1500806-34.2021.8.26.0451<br><b>Conduta:</b> Condução sob forte influência de álcool, comprovada por 0,87 mg/L no etilômetro e 1,5 g/L em sangue, com perda de controle do veículo ao tentar evitar uma motocicleta. A embriaguez prejudicou a capacidade psicomotora para reduzir velocidade e manobrar, resultando em capotamento e colisão contra defensa metálica. O acidente decorreu de imprudência/negligência por dirigir alcoolizado, causando perigo e dano efetivo.</div>`)[0];
+                popup_bcc39d80ca5404c8b903a81a1f69ae2e.setContent(html_461e06c446c7b6e79b115162cadfab91);
+            
+        
+
+        marker_5b594fe8397c64e77483e70f575c9831.bindPopup(popup_bcc39d80ca5404c8b903a81a1f69ae2e)
+        ;
+
+        
+    
+    
+            marker_5b594fe8397c64e77483e70f575c9831.bindTooltip(
+                `<div>
+                     Processo 1500806-34.2021.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3b3b8a9ba666c7628f7a6af214fb48c9 = L.marker(
+                [-22.7281313, -47.6491172],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_399ca51a9c3a90f338a830d08b2ec30e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cbf6937de1e3152e1f9ef602ce21f40c = $(`<div id="html_cbf6937de1e3152e1f9ef602ce21f40c" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1500867-26.2020.8.26.0451<br><b>Conduta:</b> Houve imprudência e negligência da condutora (iniciais K.C.R.): ao converter à esquerda iniciou a marcha sem verificar pedestre que ainda concluía a travessia na faixa, não percebeu a vítima e só freou após alerta da passageira, não evitando o atropelamento. A conduta culposa consistiu em não dar preferência ao pedestre e em atenção deficiente ao trânsito em esquina de intenso fluxo.</div>`)[0];
+                popup_399ca51a9c3a90f338a830d08b2ec30e.setContent(html_cbf6937de1e3152e1f9ef602ce21f40c);
+            
+        
+
+        marker_3b3b8a9ba666c7628f7a6af214fb48c9.bindPopup(popup_399ca51a9c3a90f338a830d08b2ec30e)
+        ;
+
+        
+    
+    
+            marker_3b3b8a9ba666c7628f7a6af214fb48c9.bindTooltip(
+                `<div>
+                     Processo 1500867-26.2020.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_826f201f89ef1c3b5bdff814f4a3feaa = L.marker(
+                [-22.7463061, -47.6568052],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_25cf00fd202e9152417f6e553dc5885d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c9b2f40c4b1ade31c36d5776b21cd0a = $(`<div id="html_0c9b2f40c4b1ade31c36d5776b21cd0a" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1528138-78.2018.8.26.0451<br><b>Conduta:</b> Conforme a sentença, o acidente decorreu de conduta culposa do condutor: após discussão e alegado furto, o acusado retornou ao local, entrou no veículo com pessoas próximas, teria dado partida com o carro engatado e acabou atingindo a vítima. Não restou comprovado dolo; faltou cautela e controle do veículo, não houve garantia de desobstrução do trajeto e deixou o local sem aguardar socorro. Tal imprudência e negligência causaram lesões graves.</div>`)[0];
+                popup_25cf00fd202e9152417f6e553dc5885d.setContent(html_0c9b2f40c4b1ade31c36d5776b21cd0a);
+            
+        
+
+        marker_826f201f89ef1c3b5bdff814f4a3feaa.bindPopup(popup_25cf00fd202e9152417f6e553dc5885d)
+        ;
+
+        
+    
+    
+            marker_826f201f89ef1c3b5bdff814f4a3feaa.bindTooltip(
+                `<div>
+                     Processo 1528138-78.2018.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6c959f7bb98b423172d7d8cfb0e7a3a3 = L.marker(
+                [-22.7485924, -47.6497795],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_0dd55a58109cd922aaaf42b6cae51525 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb31a9989b2f3ae319dab2e5b23c5e45 = $(`<div id="html_bb31a9989b2f3ae319dab2e5b23c5e45" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0021150-57.2014.8.26.0451<br><b>Conduta:</b> O condutor, ao tentar se desvencilhar de ciclistas que "pegavam rabeira", acelerou e desviou do seu trajeto, invadindo o passeio e atingindo a vítima parada em bicicleta. Agiu com imprudência e imperícia por não manter controle do veículo e realizar manobra perigosa; posteriormente deixou o local e deixou de prestar socorro quando poderia fazê-lo sem risco pessoal.</div>`)[0];
+                popup_0dd55a58109cd922aaaf42b6cae51525.setContent(html_bb31a9989b2f3ae319dab2e5b23c5e45);
+            
+        
+
+        marker_6c959f7bb98b423172d7d8cfb0e7a3a3.bindPopup(popup_0dd55a58109cd922aaaf42b6cae51525)
+        ;
+
+        
+    
+    
+            marker_6c959f7bb98b423172d7d8cfb0e7a3a3.bindTooltip(
+                `<div>
+                     Processo 0021150-57.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7f101f574c56c060011d572f8db81111 = L.marker(
+                [-22.5115118, -47.7719966],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_4d8503f70419cd9201d5f44e2b29803f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c936332fa507869950d2ad8c943d2441 = $(`<div id="html_c936332fa507869950d2ad8c943d2441" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1500149-63.2019.8.26.0451<br><b>Conduta:</b> Os réus (E. e K.) conduziram caminhões sob forte influência de álcool (≈1,8–1,9 g/L), em alta velocidade, realizando manobras em ziguezague e disputa entre si, invadindo a pista contrária e obrigando terceiros ao acostamento. Desobedeceram ordem policial de parada e um não possuía habilitação. A combinação de embriaguez, velocidade excessiva, manobras perigosas e recusa em parar criou risco imediato de grave acidente.</div>`)[0];
+                popup_4d8503f70419cd9201d5f44e2b29803f.setContent(html_c936332fa507869950d2ad8c943d2441);
+            
+        
+
+        marker_7f101f574c56c060011d572f8db81111.bindPopup(popup_4d8503f70419cd9201d5f44e2b29803f)
+        ;
+
+        
+    
+    
+            marker_7f101f574c56c060011d572f8db81111.bindTooltip(
+                `<div>
+                     Processo 1500149-63.2019.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_deefeb9dfd7c90aa49f9276979565fba = L.marker(
+                [-22.6705672, -47.7006903],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_862aeeef7f6635271f3f6f92ac6c6eb6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_19519be7a3874f9e03016b1ac638bb08 = $(`<div id="html_19519be7a3874f9e03016b1ac638bb08" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1544365-75.2020.8.26.0451<br><b>Conduta:</b> Por desrespeitar a placa 'PARE' e invadir a via preferencial sem certificar-se de que podia realizar a manobra, o condutor (G.) interceptou a trajetória da motocicleta da vítima (J.), causando a colisão. Houve imprudência e falta de cautela ao cruzar a via; não há prova de que a velocidade da vítima excluísse a culpa do réu. Além disso, o réu evadiu-se sem prestar socorro quando poderia fazê-lo.</div>`)[0];
+                popup_862aeeef7f6635271f3f6f92ac6c6eb6.setContent(html_19519be7a3874f9e03016b1ac638bb08);
+            
+        
+
+        marker_deefeb9dfd7c90aa49f9276979565fba.bindPopup(popup_862aeeef7f6635271f3f6f92ac6c6eb6)
+        ;
+
+        
+    
+    
+            marker_deefeb9dfd7c90aa49f9276979565fba.bindTooltip(
+                `<div>
+                     Processo 1544365-75.2020.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_92877e3ca6191b3e2f7d85af9ae9ebc4 = L.marker(
+                [-22.8850928, -47.6958803],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_232e5f260cf93db4deba99e15770f454 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ebee6a5fb12a0d0eb6241bead9d04f5a = $(`<div id="html_ebee6a5fb12a0d0eb6241bead9d04f5a" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0009529-53.2020.8.26.0451<br><b>Conduta:</b> O acidente decorreu da condução imprudente: o agente dirigiu embriagado (0,62 mg/L), sem habilitação, desobedeceu ordem de parada e empreendeu fuga em alta velocidade, trafegando na contramão e no acostamento. Essa combinação de embriaguez, inaptidão e desobediência resultou em perda de controle e culminou na colisão contra a cancela do pedágio, expondo terceiros a risco.</div>`)[0];
+                popup_232e5f260cf93db4deba99e15770f454.setContent(html_ebee6a5fb12a0d0eb6241bead9d04f5a);
+            
+        
+
+        marker_92877e3ca6191b3e2f7d85af9ae9ebc4.bindPopup(popup_232e5f260cf93db4deba99e15770f454)
+        ;
+
+        
+    
+    
+            marker_92877e3ca6191b3e2f7d85af9ae9ebc4.bindTooltip(
+                `<div>
+                     Processo 0009529-53.2020.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7520b9394941904139b52935c9b2de41 = L.marker(
+                [-22.7521999, -47.6798799],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_a122ab3d930c51d64e90b05e0b48a608 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3ab8e6ac3c5432b7069e95f5740df91 = $(`<div id="html_a3ab8e6ac3c5432b7069e95f5740df91" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0002553-98.2018.8.26.0451<br><b>Conduta:</b> O risco ocorreu porque o condutor, após ingerir bebida alcoólica (dosagem de 2,5 g/l), dirigiu em alta velocidade e cortou a frente da viatura da Guarda Municipal, obrigando-a a desviar e gerando perigo. A conduta culposa decorre da condução com capacidade psicomotora alterada e direção temerária, negligenciando a segurança viária.</div>`)[0];
+                popup_a122ab3d930c51d64e90b05e0b48a608.setContent(html_a3ab8e6ac3c5432b7069e95f5740df91);
+            
+        
+
+        marker_7520b9394941904139b52935c9b2de41.bindPopup(popup_a122ab3d930c51d64e90b05e0b48a608)
+        ;
+
+        
+    
+    
+            marker_7520b9394941904139b52935c9b2de41.bindTooltip(
+                `<div>
+                     Processo 0002553-98.2018.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d0de420d28417073476b83d8ba04ce4b = L.marker(
+                [-22.7407285, -47.6585919],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_90f63f4d30eff9b8f4e854a347676305 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a8777a1f3db6d808d9f5f10ff5204c7 = $(`<div id="html_9a8777a1f3db6d808d9f5f10ff5204c7" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0009511-37.2017.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o réu ingressou na via sem observar adequadamente ambos os lados: olhou apenas para a direita ao sair da garagem e não percebeu a pedestre (M.P.S.) que atravessava pela esquerda. Ao iniciar a marcha, avançou em velocidade considerável, colidiu com a idosa e passou com as rodas sobre seu corpo. Houve imprudência e negligência na falha de vigilância e na não tomada de medidas de frenagem imediata.</div>`)[0];
+                popup_90f63f4d30eff9b8f4e854a347676305.setContent(html_9a8777a1f3db6d808d9f5f10ff5204c7);
+            
+        
+
+        marker_d0de420d28417073476b83d8ba04ce4b.bindPopup(popup_90f63f4d30eff9b8f4e854a347676305)
+        ;
+
+        
+    
+    
+            marker_d0de420d28417073476b83d8ba04ce4b.bindTooltip(
+                `<div>
+                     Processo 0009511-37.2017.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1a3e3f5be1b89478c4112d9d65839567 = L.marker(
+                [-22.7218045, -47.6138279],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_4718ac2a8d40459523c2c3efa4ed4a42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bac1f600c934538593208e560aea6765 = $(`<div id="html_bac1f600c934538593208e560aea6765" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 3007964-47.2013.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o condutor dirigia com a capacidade psicomotora alterada pelo álcool (0,86 mg/L), reduzindo reflexos e atenção; enquanto manuseava o som do veículo ou dirigia distraído, atingiu a vítima (F.C.M.J.) que estava no acostamento. Após o atropelamento, o réu evadiu-se sem prestar socorro, embora pudesse fazê-lo, agravando a culpabilidade.</div>`)[0];
+                popup_4718ac2a8d40459523c2c3efa4ed4a42.setContent(html_bac1f600c934538593208e560aea6765);
+            
+        
+
+        marker_1a3e3f5be1b89478c4112d9d65839567.bindPopup(popup_4718ac2a8d40459523c2c3efa4ed4a42)
+        ;
+
+        
+    
+    
+            marker_1a3e3f5be1b89478c4112d9d65839567.bindTooltip(
+                `<div>
+                     Processo 3007964-47.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_66eceb1f962887e8e4dc9e27d40539f6 = L.marker(
+                [-22.7250247, -47.6458802],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_d52517d7d699404afad1deb9cbc96fc7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_943fb2fe1b0ea989751ea2129a8aeaf8 = $(`<div id="html_943fb2fe1b0ea989751ea2129a8aeaf8" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1501071-14.2020.8.26.0599<br><b>Conduta:</b> O acidente ocorreu por condução em alta velocidade e sob influência de álcool/substância, culminando na colisão traseira de outro veículo. O condutor transitava à noite em via de acesso a diversos bairros, sem manter distância segura e sem condições de evitar o impacto, criando perigo comum. A combinação de velocidade excessiva e estado de embriaguez evidenciou imprudência e negligência, resultando em mortes e lesões.</div>`)[0];
+                popup_d52517d7d699404afad1deb9cbc96fc7.setContent(html_943fb2fe1b0ea989751ea2129a8aeaf8);
+            
+        
+
+        marker_66eceb1f962887e8e4dc9e27d40539f6.bindPopup(popup_d52517d7d699404afad1deb9cbc96fc7)
+        ;
+
+        
+    
+    
+            marker_66eceb1f962887e8e4dc9e27d40539f6.bindTooltip(
+                `<div>
+                     Processo 1501071-14.2020.8.26.0599
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_277290446217718e064bca8264013ea7 = L.marker(
+                [-22.7269493, -47.668204],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_153ced288e6185d0041c86f63dac255f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_812d4d47464c56a842a691e3d79e38b9 = $(`<div id="html_812d4d47464c56a842a691e3d79e38b9" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1534222-95.2018.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o condutor (W.R.M.) dirigiu sob influência de álcool (etilômetro 0,67 mg/L), com capacidade psicomotora alterada. Em consequência da embriaguez perdeu o controle do veículo, invadiu o canteiro central e colidiu com um poste. A conduta foi culposa por conduzir com capacidade reduzida, gerando perigo e dano efetivo.</div>`)[0];
+                popup_153ced288e6185d0041c86f63dac255f.setContent(html_812d4d47464c56a842a691e3d79e38b9);
+            
+        
+
+        marker_277290446217718e064bca8264013ea7.bindPopup(popup_153ced288e6185d0041c86f63dac255f)
+        ;
+
+        
+    
+    
+            marker_277290446217718e064bca8264013ea7.bindTooltip(
+                `<div>
+                     Processo 1534222-95.2018.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6acf15f8ad4e5e5ed3580b665ae749b1 = L.marker(
+                [-22.7115392, -47.6349911],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_503befff70247ff5c22e0ea1e80bf282 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e596239c3cf8a16d2765e14238cc9729 = $(`<div id="html_e596239c3cf8a16d2765e14238cc9729" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0011656-03.2016.8.26.0451<br><b>Conduta:</b> O acidente ocorreu por imprudência do R.: apesar do ofuscamento solar previsível na via, não reduziu a velocidade nem adotou cautelas adequadas, trafegando “correndo um pouco”, não observando veículos parados e desrespeitando sinalização/viaturas com sinais luminosos, vindo a colidir por trás e provocar engavetamento. Trata‑se de culpa por negligência e imprudência de motorista profissional em via conhecida.</div>`)[0];
+                popup_503befff70247ff5c22e0ea1e80bf282.setContent(html_e596239c3cf8a16d2765e14238cc9729);
+            
+        
+
+        marker_6acf15f8ad4e5e5ed3580b665ae749b1.bindPopup(popup_503befff70247ff5c22e0ea1e80bf282)
+        ;
+
+        
+    
+    
+            marker_6acf15f8ad4e5e5ed3580b665ae749b1.bindTooltip(
+                `<div>
+                     Processo 0011656-03.2016.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_85722ec0d61dd65156f20550a056b8ab = L.marker(
+                [-22.6752313, -47.6711434],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_1c05684092051f4126f84259146b681e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0d34ba9a3d1778019772bb92fd1d20a = $(`<div id="html_e0d34ba9a3d1778019772bb92fd1d20a" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1501265-48.2019.8.26.0599<br><b>Conduta:</b> O acidente ocorreu porque o condutor dirigia sem habilitação e com capacidade psicomotora comprometida por ingestão de álcool. Exame de etilômetro registrou 0,98 mg/l, cerca de três vezes o limite legal; havia odor etílico, desorientação, marcha atáxica e dificuldade de fala. A embriaguez e a perda de controle do veículo resultaram na colisão contra veículos estacionados, caracterizando conduta culposa por negligência e imprudência.</div>`)[0];
+                popup_1c05684092051f4126f84259146b681e.setContent(html_e0d34ba9a3d1778019772bb92fd1d20a);
+            
+        
+
+        marker_85722ec0d61dd65156f20550a056b8ab.bindPopup(popup_1c05684092051f4126f84259146b681e)
+        ;
+
+        
+    
+    
+            marker_85722ec0d61dd65156f20550a056b8ab.bindTooltip(
+                `<div>
+                     Processo 1501265-48.2019.8.26.0599
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ee05572eb5a91b6f2a8335cedce3e41f = L.marker(
+                [-22.695238, -47.6608115],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_c2f993be50fe74b039f61085d240ab10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_446c15b54a10cf059d452decdafc5cab = $(`<div id="html_446c15b54a10cf059d452decdafc5cab" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0008272-61.2018.8.26.0451<br><b>Conduta:</b> Não se aplica</div>`)[0];
+                popup_c2f993be50fe74b039f61085d240ab10.setContent(html_446c15b54a10cf059d452decdafc5cab);
+            
+        
+
+        marker_ee05572eb5a91b6f2a8335cedce3e41f.bindPopup(popup_c2f993be50fe74b039f61085d240ab10)
+        ;
+
+        
+    
+    
+            marker_ee05572eb5a91b6f2a8335cedce3e41f.bindTooltip(
+                `<div>
+                     Processo 0008272-61.2018.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_66295e9c15c1874410fcfb31bfde1e02 = L.marker(
+                [-22.761864, -47.6503896],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_e0d6b4c4142c8802b792777a1096851f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d4d09365c60a809b9a91729316433824 = $(`<div id="html_d4d09365c60a809b9a91729316433824" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0000668-90.2018.8.26.0599<br><b>Conduta:</b> Conduzia veículo com capacidade psicomotora alterada por ingestão de álcool, conforme exame clínico e depoimentos, e, ao tentar apanhar um objeto no assoalho, declarou ter segurado o volante com uma mão, invadindo a pista contrária e atingindo uma bicicleta. A conduta culposa consistiu na direção sob efeito de álcool e na imprudência/distração que ocasionaram a colisão.</div>`)[0];
+                popup_e0d6b4c4142c8802b792777a1096851f.setContent(html_d4d09365c60a809b9a91729316433824);
+            
+        
+
+        marker_66295e9c15c1874410fcfb31bfde1e02.bindPopup(popup_e0d6b4c4142c8802b792777a1096851f)
+        ;
+
+        
+    
+    
+            marker_66295e9c15c1874410fcfb31bfde1e02.bindTooltip(
+                `<div>
+                     Processo 0000668-90.2018.8.26.0599
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f4f23d905e5af7ad56dbd2d6bb9690c2 = L.marker(
+                [-22.7716041, -47.592793],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_9b12154444ebe8f1eb21c9a0f84ed486 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ad25ee170db76022033bdfa0af9010c = $(`<div id="html_8ad25ee170db76022033bdfa0af9010c" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0019971-59.2012.8.26.0451<br><b>Conduta:</b> Conduziu veículo em via pública com concentração de álcool no sangue superior a 6 decigramas por litro, comprometendo a aptidão psicomotora. A conduta evidencia imprudência e negligência ao assumir o risco de causar dano, dirigindo alcoolizado e expondo terceiros ao perigo de acidente.</div>`)[0];
+                popup_9b12154444ebe8f1eb21c9a0f84ed486.setContent(html_8ad25ee170db76022033bdfa0af9010c);
+            
+        
+
+        marker_f4f23d905e5af7ad56dbd2d6bb9690c2.bindPopup(popup_9b12154444ebe8f1eb21c9a0f84ed486)
+        ;
+
+        
+    
+    
+            marker_f4f23d905e5af7ad56dbd2d6bb9690c2.bindTooltip(
+                `<div>
+                     Processo 0019971-59.2012.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9d88cc4d04d07ee3a44102f380f4cebd = L.marker(
+                [-22.8395548, -47.67515700000001],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_c3b0295eab2342e2a1492f52b7d49631 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05db650b284e3ecf8bb7d25e67bf0dae = $(`<div id="html_05db650b284e3ecf8bb7d25e67bf0dae" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0005347-97.2015.8.26.0451<br><b>Conduta:</b> Não se aplica</div>`)[0];
+                popup_c3b0295eab2342e2a1492f52b7d49631.setContent(html_05db650b284e3ecf8bb7d25e67bf0dae);
+            
+        
+
+        marker_9d88cc4d04d07ee3a44102f380f4cebd.bindPopup(popup_c3b0295eab2342e2a1492f52b7d49631)
+        ;
+
+        
+    
+    
+            marker_9d88cc4d04d07ee3a44102f380f4cebd.bindTooltip(
+                `<div>
+                     Processo 0005347-97.2015.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0b4d0a20912b069c1767cd4eaa778ed2 = L.marker(
+                [-22.6851432, -47.6767723],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_619968197f43a8d01f94030ae0e5ee3d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ebf7cd3866fe34ba54a6f56632e7f5dc = $(`<div id="html_ebf7cd3866fe34ba54a6f56632e7f5dc" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0018642-12.2012.8.26.0451<br><b>Conduta:</b> O condutor ingressou na rodovia pelo acostamento sem os devidos cuidados, acelerou ("cantou pneus") e invadiu a pista contrária em velocidade incompatível, colidindo frontalmente com a motocicleta. Estava alcoolizado, o que prejudicou sua percepção, e evadiu-se do local sem prestar socorro. Dirigir embriagado, realizar manobra insegura e fugir do local configuram a conduta culposa causadora do acidente.</div>`)[0];
+                popup_619968197f43a8d01f94030ae0e5ee3d.setContent(html_ebf7cd3866fe34ba54a6f56632e7f5dc);
+            
+        
+
+        marker_0b4d0a20912b069c1767cd4eaa778ed2.bindPopup(popup_619968197f43a8d01f94030ae0e5ee3d)
+        ;
+
+        
+    
+    
+            marker_0b4d0a20912b069c1767cd4eaa778ed2.bindTooltip(
+                `<div>
+                     Processo 0018642-12.2012.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c679addc76d00789866c3f6f6670e9e7 = L.marker(
+                [-22.6803008, -47.6671798],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_41e0ca83a7d3c695c388acc1bcc3b105 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61bd1a45d616e0db07d6b6579a68a240 = $(`<div id="html_61bd1a45d616e0db07d6b6579a68a240" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0016983-94.2014.8.26.0451<br><b>Conduta:</b> O acidente ocorreu por imprudência e negligência do condutor, que realizou ultrapassagem em curva, em alta velocidade e na contramão, sem condições de visibilidade e segurança, perdeu o controle do veículo e colidiu frontalmente com uma motocicleta parada em razão de placa “PARE”, causando lesões às ocupantes; havia ainda indícios de ingestão de álcool.</div>`)[0];
+                popup_41e0ca83a7d3c695c388acc1bcc3b105.setContent(html_61bd1a45d616e0db07d6b6579a68a240);
+            
+        
+
+        marker_c679addc76d00789866c3f6f6670e9e7.bindPopup(popup_41e0ca83a7d3c695c388acc1bcc3b105)
+        ;
+
+        
+    
+    
+            marker_c679addc76d00789866c3f6f6670e9e7.bindTooltip(
+                `<div>
+                     Processo 0016983-94.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7437e1bcdf1e6d945182d9d0a96475d9 = L.marker(
+                [-22.6735437, -47.7562851],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_6f16cdd40e63f0733ace245e52bc2167 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6fa1a92fe10d6c00c0214d9d0327dc91 = $(`<div id="html_6fa1a92fe10d6c00c0214d9d0327dc91" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0011482-28.2015.8.26.0451<br><b>Conduta:</b> Porque o condutor ingressou na pista da direita para a esquerda de forma brusca, sem sinalização e sem observar a via preferencial, enquanto não possuía habilitação. Essa conduta imprudente e negligente intersectou a trajetória do outro veículo, provocando colisão e capotagem; o autor também deixou de prestar socorro e evadiu-se, evidenciando falta de cautela e desrespeito ao dever de cuidado.</div>`)[0];
+                popup_6f16cdd40e63f0733ace245e52bc2167.setContent(html_6fa1a92fe10d6c00c0214d9d0327dc91);
+            
+        
+
+        marker_7437e1bcdf1e6d945182d9d0a96475d9.bindPopup(popup_6f16cdd40e63f0733ace245e52bc2167)
+        ;
+
+        
+    
+    
+            marker_7437e1bcdf1e6d945182d9d0a96475d9.bindTooltip(
+                `<div>
+                     Processo 0011482-28.2015.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a16ec49c2d9cb40d5e40621c3232c3f1 = L.marker(
+                [-22.7135871, -47.6532362],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_d18860927bf375de7fcd893378e283c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c5548f0ea59633cb134d1676230989e0 = $(`<div id="html_c5548f0ea59633cb134d1676230989e0" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0013919-08.2016.8.26.0451<br><b>Conduta:</b> O acidente decorreu da invasão da faixa contrária pelo veículo conduzido pelo réu, que derivou à esquerda e colidiu frontalmente com a motocicleta. A perícia e os vestígios no local demonstraram ocupação indevida da contramão, caracterizando imprudência grave (invasão de contramão) que causou o óbito, em desacordo com a versão apresentada pelo condutor.</div>`)[0];
+                popup_d18860927bf375de7fcd893378e283c6.setContent(html_c5548f0ea59633cb134d1676230989e0);
+            
+        
+
+        marker_a16ec49c2d9cb40d5e40621c3232c3f1.bindPopup(popup_d18860927bf375de7fcd893378e283c6)
+        ;
+
+        
+    
+    
+            marker_a16ec49c2d9cb40d5e40621c3232c3f1.bindTooltip(
+                `<div>
+                     Processo 0013919-08.2016.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ec55affbeb194ac8a75c21f5ed9e63eb = L.marker(
+                [-22.7126738, -47.6354285],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_088772d7ede22b980e9496dfdcbbd758 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9221df326af31a7f7d99c253b36dfc13 = $(`<div id="html_9221df326af31a7f7d99c253b36dfc13" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0021065-71.2014.8.26.0451<br><b>Conduta:</b> Conduzia com imprudência e velocidade excessiva (admitiu aproximadamente 120 km/h em local com limite de 100 km/h), não manteve distância de segurança e freou/tentou desviar tardiamente ao visualizar veículo/radar à frente. Colidiu com a traseira do automóvel à sua frente, provocando capotamento e arremesso do passageiro, que não usava cinto, resultando em óbito. Testemunhas confirmaram a alta velocidade e a dinâmica do impacto, caracterizando culpa por imprudência e negligência na condução.</div>`)[0];
+                popup_088772d7ede22b980e9496dfdcbbd758.setContent(html_9221df326af31a7f7d99c253b36dfc13);
+            
+        
+
+        marker_ec55affbeb194ac8a75c21f5ed9e63eb.bindPopup(popup_088772d7ede22b980e9496dfdcbbd758)
+        ;
+
+        
+    
+    
+            marker_ec55affbeb194ac8a75c21f5ed9e63eb.bindTooltip(
+                `<div>
+                     Processo 0021065-71.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_55bcfb87b8f48d4f5aefb07efa0c500f = L.marker(
+                [-22.745487, -47.6616001],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_ac5f2d1b108082a844ca5eb8ef43826f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_607fc4652e1396ef37b8e8c115a840a9 = $(`<div id="html_607fc4652e1396ef37b8e8c115a840a9" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 1500148-56.2018.8.26.0599<br><b>Conduta:</b> O evento decorreu da conduta negligente do condutor que ingeriu bebida alcoólica e medicamentos e, ainda assim, assumiu a direção. Em estado de embriaguez e com capacidade psicomotora alterada, dirigiu em ziguezague, perdendo controle e colocando em risco a segurança pública. A combinação álcool/medicação e a persistência em conduzir demonstram imprudência e falta de cuidado com terceiros, provocando a sequência de abordagem policial, resistência e danos materiais.</div>`)[0];
+                popup_ac5f2d1b108082a844ca5eb8ef43826f.setContent(html_607fc4652e1396ef37b8e8c115a840a9);
+            
+        
+
+        marker_55bcfb87b8f48d4f5aefb07efa0c500f.bindPopup(popup_ac5f2d1b108082a844ca5eb8ef43826f)
+        ;
+
+        
+    
+    
+            marker_55bcfb87b8f48d4f5aefb07efa0c500f.bindTooltip(
+                `<div>
+                     Processo 1500148-56.2018.8.26.0599
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_492ddc9581da75f1341e267ade32f71c = L.marker(
+                [-22.7340951, -47.6575378],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_c0d51b772c562656c1970e379fbdfec8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b7a0069e33865fe50b17c8504b8a4a68 = $(`<div id="html_b7a0069e33865fe50b17c8504b8a4a68" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0005797-74.2014.8.26.0451<br><b>Conduta:</b> Conduziu veículo com capacidade psicomotora alterada (1,6 g/L de álcool), dirigindo de forma imprudente e invadindo faixas, o que resultou em colisão traseira contra a motocicleta ao passar por lombada. Após o impacto, fugiu do local, não prestou socorro às vítimas J.A.S.F. e C.F.S. e abandonou o veículo para se eximir de responsabilidade. A combinação de embriaguez, direção negligente e omissão de socorro configurou a conduta culposa.</div>`)[0];
+                popup_c0d51b772c562656c1970e379fbdfec8.setContent(html_b7a0069e33865fe50b17c8504b8a4a68);
+            
+        
+
+        marker_492ddc9581da75f1341e267ade32f71c.bindPopup(popup_c0d51b772c562656c1970e379fbdfec8)
+        ;
+
+        
+    
+    
+            marker_492ddc9581da75f1341e267ade32f71c.bindTooltip(
+                `<div>
+                     Processo 0005797-74.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_142d29fb5f3159bed83be859e89faf3b = L.marker(
+                [-22.7683502, -47.67522150000001],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_8e76e388c7a75d18f531d95743402b03 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dad2366f894463dad037d490f8066701 = $(`<div id="html_dad2366f894463dad037d490f8066701" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 3015973-95.2013.8.26.0451<br><b>Conduta:</b> O acidente ocorreu por conduta culposa do condutor: dirigia sem habilitação, perdeu o controle do veículo ao transpor uma lombada e, ao encontrar o obstáculo, acelerou em vez de frear, demonstrando imperícia. Ademais, foi imprudente por não exigir o uso do cinto de segurança pelos ocupantes, o que agravou as lesões e resultou no óbito da passageira dianteira.</div>`)[0];
+                popup_8e76e388c7a75d18f531d95743402b03.setContent(html_dad2366f894463dad037d490f8066701);
+            
+        
+
+        marker_142d29fb5f3159bed83be859e89faf3b.bindPopup(popup_8e76e388c7a75d18f531d95743402b03)
+        ;
+
+        
+    
+    
+            marker_142d29fb5f3159bed83be859e89faf3b.bindTooltip(
+                `<div>
+                     Processo 3015973-95.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5c88c13d83c222e04f497aab75444103 = L.marker(
+                [-22.7764759, -47.6518417],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_0d028f67d68b8dd40fa872b69dccfb22 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f5a68927581d951f67e1bbbbec916dc0 = $(`<div id="html_f5a68927581d951f67e1bbbbec916dc0" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0019439-22.2011.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o condutor do caminhão ingressou na rodovia proveniente de uma vicinal sem certificar-se da segurança da manobra, fez curva muito aberta e invadiu parte da faixa do veículo que trafegava na via preferencial. Agiu com imprudência e negligência, não observando o tráfego e sem adotar as cautelas exigidas a um veículo com dois reboques, interceptando a trajetória do outro automóvel.</div>`)[0];
+                popup_0d028f67d68b8dd40fa872b69dccfb22.setContent(html_f5a68927581d951f67e1bbbbec916dc0);
+            
+        
+
+        marker_5c88c13d83c222e04f497aab75444103.bindPopup(popup_0d028f67d68b8dd40fa872b69dccfb22)
+        ;
+
+        
+    
+    
+            marker_5c88c13d83c222e04f497aab75444103.bindTooltip(
+                `<div>
+                     Processo 0019439-22.2011.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7ae74fc213696d8f3f16a09ece1c7afe = L.marker(
+                [-22.5104774, -47.7804904],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_2805c1b6b1e25bb9073da1d534a0860e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d7e5832736e66a16ca586e1c2fe59456 = $(`<div id="html_d7e5832736e66a16ca586e1c2fe59456" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0021427-73.2014.8.26.0451<br><b>Conduta:</b> O acidente decorreu da condução de veículo após ingestão de álcool pelo réu (D.R.F.), que apresentou 0,9 g/l no exame, indicando alteração psicomotora. Ao dirigir embriagado, perdeu controle na descida, arrastou o veículo e colidiu com carro estacionado e motocicleta. A tentativa de atribuir causa a veículo na contramão não foi comprovada. Assim, a conduta culposa foi dirigir sob influência de álcool, comprometendo a capacidade de condução e causando o sinistro.</div>`)[0];
+                popup_2805c1b6b1e25bb9073da1d534a0860e.setContent(html_d7e5832736e66a16ca586e1c2fe59456);
+            
+        
+
+        marker_7ae74fc213696d8f3f16a09ece1c7afe.bindPopup(popup_2805c1b6b1e25bb9073da1d534a0860e)
+        ;
+
+        
+    
+    
+            marker_7ae74fc213696d8f3f16a09ece1c7afe.bindTooltip(
+                `<div>
+                     Processo 0021427-73.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a916e5ccdfd43356aefc436de1dbe209 = L.marker(
+                [-22.7136236, -47.6366169],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_35b804a3906b44b6d60db41753c37285 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b58b577f3d037ca2eecea685a75dc08 = $(`<div id="html_2b58b577f3d037ca2eecea685a75dc08" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0012138-82.2015.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o condutor dirigiu sob influência de álcool, comprometendo sua capacidade psicomotora. Após consumir bebidas em um bar, ao tentar manobrar/estacionar perdeu controle e atingiu veículos estacionados. Laudo pericial e relatos policiais indicam hálito etílico, consciência obnubilada e memória prejudicada, demonstrando que a condução alcoolizada e a imprudência foram a causa direta do dano.</div>`)[0];
+                popup_35b804a3906b44b6d60db41753c37285.setContent(html_2b58b577f3d037ca2eecea685a75dc08);
+            
+        
+
+        marker_a916e5ccdfd43356aefc436de1dbe209.bindPopup(popup_35b804a3906b44b6d60db41753c37285)
+        ;
+
+        
+    
+    
+            marker_a916e5ccdfd43356aefc436de1dbe209.bindTooltip(
+                `<div>
+                     Processo 0012138-82.2015.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c6033f1a55e063941d92bed650625f50 = L.marker(
+                [-22.6750588, -47.6827298],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_2397e07466fd550396bf4536ddf0afff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a55ddd417a8ccf49147f6869b435e560 = $(`<div id="html_a55ddd417a8ccf49147f6869b435e560" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0000507-78.2014.8.26.0451<br><b>Conduta:</b> R. conduziu veículo sem habilitação e, ao receber ordem de parada em bloqueio policial, não obedeceu e empreendeu fuga em alta velocidade. A condução em avenida movimentada e a manobra evasiva quase ocasionaram o atropelamento de um policial, expondo transeuntes e veículos a perigo concreto de dano. A combinação de dirigir sem habilitação e a fuga imprudente caracteriza a conduta culposa.</div>`)[0];
+                popup_2397e07466fd550396bf4536ddf0afff.setContent(html_a55ddd417a8ccf49147f6869b435e560);
+            
+        
+
+        marker_c6033f1a55e063941d92bed650625f50.bindPopup(popup_2397e07466fd550396bf4536ddf0afff)
+        ;
+
+        
+    
+    
+            marker_c6033f1a55e063941d92bed650625f50.bindTooltip(
+                `<div>
+                     Processo 0000507-78.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7e4362c8655cb1693fe2e66e8c23d67a = L.marker(
+                [-22.7193227, -47.6289258],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_8842726ebd9e8721ec28899f93b1b48b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cce06db6cd265bbca63b0b214e73fc92 = $(`<div id="html_cce06db6cd265bbca63b0b214e73fc92" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0007462-57.2016.8.26.0451<br><b>Conduta:</b> R.A.P. conduziu o veículo com capacidade psicomotora alterada em razão de ingestão de álcool, apesar de ter a habilitação cassada. Ao acionar o freio de mão o automóvel não ficou contido, desceu a via e colidiu contra o guardrail. A combinação de dirigir embriagado, sem condições de controle e sem a devida habilitação configurou a conduta culposa que ocasionou o acidente.</div>`)[0];
+                popup_8842726ebd9e8721ec28899f93b1b48b.setContent(html_cce06db6cd265bbca63b0b214e73fc92);
+            
+        
+
+        marker_7e4362c8655cb1693fe2e66e8c23d67a.bindPopup(popup_8842726ebd9e8721ec28899f93b1b48b)
+        ;
+
+        
+    
+    
+            marker_7e4362c8655cb1693fe2e66e8c23d67a.bindTooltip(
+                `<div>
+                     Processo 0007462-57.2016.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8c7953b01206a7025bb1458a41799e85 = L.marker(
+                [-22.7135871, -47.6532362],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_380c2d521534484bdeaf9eb1a7491648 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45adec11056d6bc5c5e77686c96de56c = $(`<div id="html_45adec11056d6bc5c5e77686c96de56c" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0005671-53.2016.8.26.0451<br><b>Conduta:</b> Acidente decorrente de colisão traseira entre caminhão e motocicleta. A conduta culposa apontada refere-se à imprudência e desatenção do condutor do caminhão (possível não observância da distância de segurança e falha na vigilância), além da hipótese concorrente de ingresso súbito da moto do acostamento. Consta também omissão de socorro pelo condutor, que deixou o local sem prestar auxílio.</div>`)[0];
+                popup_380c2d521534484bdeaf9eb1a7491648.setContent(html_45adec11056d6bc5c5e77686c96de56c);
+            
+        
+
+        marker_8c7953b01206a7025bb1458a41799e85.bindPopup(popup_380c2d521534484bdeaf9eb1a7491648)
+        ;
+
+        
+    
+    
+            marker_8c7953b01206a7025bb1458a41799e85.bindTooltip(
+                `<div>
+                     Processo 0005671-53.2016.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2cf19ce84287925713253854f68ba32c = L.marker(
+                [-22.7205836, -47.6159327],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_92582f8a214d53f1737ec89d03607587 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f705f47c3c2af80e330cc69a491f732 = $(`<div id="html_9f705f47c3c2af80e330cc69a491f732" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0009202-21.2014.8.26.0451<br><b>Conduta:</b> O réu conduziu o veículo sob efeito de álcool (0,7 g/L), dirigindo em zigue‑zague e invadindo a faixa contrária. Tal imprudência e imperícia ao assumir a direção alcoolizado e penetrar na contramão provocaram choque frontal, resultando nas lesões corporais graves das vítimas.</div>`)[0];
+                popup_92582f8a214d53f1737ec89d03607587.setContent(html_9f705f47c3c2af80e330cc69a491f732);
+            
+        
+
+        marker_2cf19ce84287925713253854f68ba32c.bindPopup(popup_92582f8a214d53f1737ec89d03607587)
+        ;
+
+        
+    
+    
+            marker_2cf19ce84287925713253854f68ba32c.bindTooltip(
+                `<div>
+                     Processo 0009202-21.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_52fc7cf7cfabe7e7f4ddedbb59cf1422 = L.marker(
+                [-22.675635, -47.6328034],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_2db1304248c0d1c424c540d60444fea4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_71179c82e2bea40bfe44988672a88e3a = $(`<div id="html_71179c82e2bea40bfe44988672a88e3a" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0011483-47.2014.8.26.0451<br><b>Conduta:</b> O acusado conduziu o veículo com capacidade psicomotora alterada por álcool (0,56 mg/L no etilômetro), perdeu o controle e capotou. Alegadas falhas mecânicas foram refutadas pelo laudo, que apontou pneus em bom estado. Assim, a combinação de ingestão de álcool, imprudência e negligência na observância das normas de cautela ao dirigir resultou diretamente no acidente e nas lesões graves sofridas pela passageira (J.R.F.S.).</div>`)[0];
+                popup_2db1304248c0d1c424c540d60444fea4.setContent(html_71179c82e2bea40bfe44988672a88e3a);
+            
+        
+
+        marker_52fc7cf7cfabe7e7f4ddedbb59cf1422.bindPopup(popup_2db1304248c0d1c424c540d60444fea4)
+        ;
+
+        
+    
+    
+            marker_52fc7cf7cfabe7e7f4ddedbb59cf1422.bindTooltip(
+                `<div>
+                     Processo 0011483-47.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_86b8b9082b3b44b14b6da460a8656f8e = L.marker(
+                [-22.9103952, -47.7086895],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_f6b2d6483941b67c9d5939e4cfbe3f1e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ebcfa61e1867c73e473388514359561 = $(`<div id="html_8ebcfa61e1867c73e473388514359561" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0009281-97.2014.8.26.0451<br><b>Conduta:</b> Não foi possível comprovar conduta culposa do acusado. Depoimentos são conflitantes e inconclusivos: há versão de que a outra motocicleta teria deslocado à esquerda enquanto o réu trafegava à esquerda, e testemunhas não presenciaram claramente a colisão. O laudo pericial também não estabeleceu a dinâmica. Assim, não se apurou imprudência, negligência ou imperícia atribuível ao réu.</div>`)[0];
+                popup_f6b2d6483941b67c9d5939e4cfbe3f1e.setContent(html_8ebcfa61e1867c73e473388514359561);
+            
+        
+
+        marker_86b8b9082b3b44b14b6da460a8656f8e.bindPopup(popup_f6b2d6483941b67c9d5939e4cfbe3f1e)
+        ;
+
+        
+    
+    
+            marker_86b8b9082b3b44b14b6da460a8656f8e.bindTooltip(
+                `<div>
+                     Processo 0009281-97.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_325506d339587a06efdf22b7b8d3f243 = L.marker(
+                [-22.5115118, -47.7719966],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_55779c1059d861d1b7bbd65113fdfc2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7ab522d14d53347425643f4474244b7 = $(`<div id="html_c7ab522d14d53347425643f4474244b7" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0007313-66.2013.8.26.0451<br><b>Conduta:</b> Acidente ocorreu por imprudência do condutor do ônibus: não manteve distância de segurança e transitava em velocidade incompatível com a via, invadiu a pista contrária ao desviar à esquerda para evitar colisão com veículo à frente, em local de ultrapassagem proibida. A manobra arriscada e falta de cautela causaram a colisão frontal que vitimou F.P.</div>`)[0];
+                popup_55779c1059d861d1b7bbd65113fdfc2e.setContent(html_c7ab522d14d53347425643f4474244b7);
+            
+        
+
+        marker_325506d339587a06efdf22b7b8d3f243.bindPopup(popup_55779c1059d861d1b7bbd65113fdfc2e)
+        ;
+
+        
+    
+    
+            marker_325506d339587a06efdf22b7b8d3f243.bindTooltip(
+                `<div>
+                     Processo 0007313-66.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3a2839342edc602329b567ce885895b2 = L.marker(
+                [-22.7398102, -47.6332322],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_76c96b4eaeb332ac616837010669b136 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b166d96afb803778a0fb1a7f8ad7da1 = $(`<div id="html_9b166d96afb803778a0fb1a7f8ad7da1" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0000121-55.2015.8.26.0599<br><b>Conduta:</b> O réu conduziu o veículo com capacidade psicomotora alterada pela ingestão de álcool, apresentando hálito etílico, marcha ebriosa e desorientação. Essa condição reduziu atenção, coordenação e reação, fazendo-o colidir com uma caminhonete estacionada; portanto a embriaguez ao volante foi a causa culposa do acidente.</div>`)[0];
+                popup_76c96b4eaeb332ac616837010669b136.setContent(html_9b166d96afb803778a0fb1a7f8ad7da1);
+            
+        
+
+        marker_3a2839342edc602329b567ce885895b2.bindPopup(popup_76c96b4eaeb332ac616837010669b136)
+        ;
+
+        
+    
+    
+            marker_3a2839342edc602329b567ce885895b2.bindTooltip(
+                `<div>
+                     Processo 0000121-55.2015.8.26.0599
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e0dff08b2b88b6f263ca529366d26e3c = L.marker(
+                [-22.6851432, -47.6767723],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_a0ef8aac8b07a19c7ad7b1a0509ed3e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3c65cd32729640728b7ae2d5a756bcf = $(`<div id="html_b3c65cd32729640728b7ae2d5a756bcf" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0009695-32.2013.8.26.0451<br><b>Conduta:</b> A culpa do réu decorre de ter conduzido o caminhão em velocidade superior à permitida (aprox. 65 km/h em local sinalizado a 40 km/h), apesar de visualizar a vítima no acostamento e em trecho com obras e passarela próxima. Não adotou a cautela necessária nem freou a tempo — vestígios de frenagem indicam velocidade excessiva — contribuindo para o atropelamento, ainda que a vítima tenha atravessado em local impróprio.</div>`)[0];
+                popup_a0ef8aac8b07a19c7ad7b1a0509ed3e4.setContent(html_b3c65cd32729640728b7ae2d5a756bcf);
+            
+        
+
+        marker_e0dff08b2b88b6f263ca529366d26e3c.bindPopup(popup_a0ef8aac8b07a19c7ad7b1a0509ed3e4)
+        ;
+
+        
+    
+    
+            marker_e0dff08b2b88b6f263ca529366d26e3c.bindTooltip(
+                `<div>
+                     Processo 0009695-32.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_59616315e2ec03b5a1db4335724cb7cb = L.marker(
+                [-22.5838179, -47.4097569],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_6268aaaa8e9fa66e0bf1cf56c7b2379d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aa7dea8deb411a60c4e235d563d32e97 = $(`<div id="html_aa7dea8deb411a60c4e235d563d32e97" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0018446-71.2014.8.26.0451<br><b>Conduta:</b> O acidente decorreu da mudança de faixa à direita realizada pelo réu sem observar preferências e sem aguardar espaço seguro. Não sinalizou adequadamente e fez manobra brusca que entrou na trajetória do ônibus, provocando colisão lateral. Laudo pericial e depoimentos confirmam que a alteração de faixa imprudente e a falta de cautela foram a causa imediata, configurando culpa por imprudência/negligência.</div>`)[0];
+                popup_6268aaaa8e9fa66e0bf1cf56c7b2379d.setContent(html_aa7dea8deb411a60c4e235d563d32e97);
+            
+        
+
+        marker_59616315e2ec03b5a1db4335724cb7cb.bindPopup(popup_6268aaaa8e9fa66e0bf1cf56c7b2379d)
+        ;
+
+        
+    
+    
+            marker_59616315e2ec03b5a1db4335724cb7cb.bindTooltip(
+                `<div>
+                     Processo 0018446-71.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7bb511e7f6a8f61c8a95c350d32c6082 = L.marker(
+                [-22.7220226, -47.6460944],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_691e5202a39a05730560162dace9b55e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fa348bff4fdf1fd7273f08aa59bd22e2 = $(`<div id="html_fa348bff4fdf1fd7273f08aa59bd22e2" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0006130-89.2015.8.26.0451<br><b>Conduta:</b> O condutor ingeriu bebidas alcoólicas (0,38 mg/L) e, apesar do repouso, apresentava capacidade psicomotora alterada. Ao abaixar-se para pegar um objeto dentro do veículo, perdeu o controle, colidiu e capotou, atingindo veículos estacionados. A influência do álcool e a condução negligente reduziram sua aptidão para dirigir, causando dano e risco a terceiros.</div>`)[0];
+                popup_691e5202a39a05730560162dace9b55e.setContent(html_fa348bff4fdf1fd7273f08aa59bd22e2);
+            
+        
+
+        marker_7bb511e7f6a8f61c8a95c350d32c6082.bindPopup(popup_691e5202a39a05730560162dace9b55e)
+        ;
+
+        
+    
+    
+            marker_7bb511e7f6a8f61c8a95c350d32c6082.bindTooltip(
+                `<div>
+                     Processo 0006130-89.2015.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5b51490e7e0f6902f7fc4a7b3945f63a = L.marker(
+                [-22.6980716, -47.6795498],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_2aee0dfd0496e01e39c0d6d7727a5222 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b1e1aa9ba3f24bcacae1cfc1f80ce1b = $(`<div id="html_7b1e1aa9ba3f24bcacae1cfc1f80ce1b" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0000072-14.2015.8.26.0599<br><b>Conduta:</b> O acidente ocorreu porque o condutor (C.E.M.), com capacidade psicomotora alterada por álcool, não freou imediatamente quando a vítima (C.H.M.) se agarrou pela janela e segurou o volante. Ao 'soltar' o carro por cerca de cinquenta metros e não controlar a velocidade, houve perda de controle e colisão com árvore. A omissão em acionar os freios e a condução sob influência configuram imprudência culposa.</div>`)[0];
+                popup_2aee0dfd0496e01e39c0d6d7727a5222.setContent(html_7b1e1aa9ba3f24bcacae1cfc1f80ce1b);
+            
+        
+
+        marker_5b51490e7e0f6902f7fc4a7b3945f63a.bindPopup(popup_2aee0dfd0496e01e39c0d6d7727a5222)
+        ;
+
+        
+    
+    
+            marker_5b51490e7e0f6902f7fc4a7b3945f63a.bindTooltip(
+                `<div>
+                     Processo 0000072-14.2015.8.26.0599
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d0b1ff846b67a3e9ed2d6d66847725df = L.marker(
+                [-22.737502, -47.6472662],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_c41974bc33219b1e00911edeed4572db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f2ec8180d325426b767ea3a7448474c2 = $(`<div id="html_f2ec8180d325426b767ea3a7448474c2" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0002486-41.2015.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o condutor ingressou na avenida pela contramão ao tentar conversão/retorno, não observando a aproximação da motocicleta de N.F., interceptando sua trajetória e causando colisão. Houve imprudência e falta de atenção às regras de circulação; após o impacto, o condutor evadiu-se e não prestou socorro, apesar de não haver risco pessoal, majorando a culpabilidade.</div>`)[0];
+                popup_c41974bc33219b1e00911edeed4572db.setContent(html_f2ec8180d325426b767ea3a7448474c2);
+            
+        
+
+        marker_d0b1ff846b67a3e9ed2d6d66847725df.bindPopup(popup_c41974bc33219b1e00911edeed4572db)
+        ;
+
+        
+    
+    
+            marker_d0b1ff846b67a3e9ed2d6d66847725df.bindTooltip(
+                `<div>
+                     Processo 0002486-41.2015.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_164db33ca70c94db371389197865ebfe = L.marker(
+                [-22.7535844, -47.3576474],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_b082f9fefa1b91b0494a8751c03e175b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cfc83fb2c681d6d8d2f01cd24d801f9a = $(`<div id="html_cfc83fb2c681d6d8d2f01cd24d801f9a" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0032249-73.2004.8.26.0451<br><b>Conduta:</b> Condução de veículo à noite sob influência de álcool e sem habilitação, em cruzamento urbano, gerando perigo de dano. A combinação de embriaguez e ausência de habilitação revela imprudência e negligência, aumentando o risco de perda de controle, colisão ou lesão a terceiros, configurando comportamento culposo pela exposição indevida ao perigo.</div>`)[0];
+                popup_b082f9fefa1b91b0494a8751c03e175b.setContent(html_cfc83fb2c681d6d8d2f01cd24d801f9a);
+            
+        
+
+        marker_164db33ca70c94db371389197865ebfe.bindPopup(popup_b082f9fefa1b91b0494a8751c03e175b)
+        ;
+
+        
+    
+    
+            marker_164db33ca70c94db371389197865ebfe.bindTooltip(
+                `<div>
+                     Processo 0032249-73.2004.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f6d41e826fbefd12d816924987725107 = L.marker(
+                [-22.7499692, -47.64949619999999],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_dc94d342967f52615ee26e8d0e64f339 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e26795cd5d891c7f7f2b498a65eea3d = $(`<div id="html_7e26795cd5d891c7f7f2b498a65eea3d" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0001057-12.2017.8.26.0599<br><b>Conduta:</b> O acidente ocorreu porque o condutor dirigia com capacidade psicomotora alterada por álcool (1,54 mg/l), trafegando em contramão, com farol apagado, em avenida de sentido único. Essa direção imprudente e embriaguez impediram a adoção de medidas de segurança (frenagem/evitação), culminando na colisão contra o veículo de L.R.S. A conduta constitui culpa grave por negligência e imprudência sob influência de álcool.</div>`)[0];
+                popup_dc94d342967f52615ee26e8d0e64f339.setContent(html_7e26795cd5d891c7f7f2b498a65eea3d);
+            
+        
+
+        marker_f6d41e826fbefd12d816924987725107.bindPopup(popup_dc94d342967f52615ee26e8d0e64f339)
+        ;
+
+        
+    
+    
+            marker_f6d41e826fbefd12d816924987725107.bindTooltip(
+                `<div>
+                     Processo 0001057-12.2017.8.26.0599
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_99d69a96bd95955df095502e61bb918f = L.marker(
+                [-22.6726582, -47.70641209999999],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_02bc1f02dee985218a762cbfe83a2c68 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ec751cf5be59143ec99a8a40b5b9a63 = $(`<div id="html_2ec751cf5be59143ec99a8a40b5b9a63" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0000945-02.2017.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o agente estacionou o veículo em via em declive e deixou-o sem a devida garantia de imobilização. Ao abrir o porta-malas, não assegurou o acionamento correto do freio de estacionamento; o carro deslocou-se e atropelou a vítima. A justificativa de defeito na trava do freio não foi comprovada, pois o acusado reparou o veículo antes da perícia. Houve negligência e violação do dever objetivo de cuidado, sendo a ocorrência previsível.</div>`)[0];
+                popup_02bc1f02dee985218a762cbfe83a2c68.setContent(html_2ec751cf5be59143ec99a8a40b5b9a63);
+            
+        
+
+        marker_99d69a96bd95955df095502e61bb918f.bindPopup(popup_02bc1f02dee985218a762cbfe83a2c68)
+        ;
+
+        
+    
+    
+            marker_99d69a96bd95955df095502e61bb918f.bindTooltip(
+                `<div>
+                     Processo 0000945-02.2017.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_eecf220601554c0b9a530a28bf842ad2 = L.marker(
+                [-22.7378703, -47.5942196],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_5e93bab2c9da5fc15eede984c055ef33 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4c0c520ebea680f7fa54bd44597bb39 = $(`<div id="html_e4c0c520ebea680f7fa54bd44597bb39" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0004758-71.2016.8.26.0451<br><b>Conduta:</b> O réu realizou conversão irregular saindo de uma chácara e cruzando perpendicularmente a pista sinalizada com faixa dupla contínua, interceptando a trajetória da motocicleta. Deixou de certificar-se de que podia executar a manobra sem perigo para outros usuários, violando o dever de cautela legal, configurando imprudência. Mesmo havendo indícios de velocidade da vítima, tal circunstância não afasta a culpa do condutor pela manobra perigosa.</div>`)[0];
+                popup_5e93bab2c9da5fc15eede984c055ef33.setContent(html_e4c0c520ebea680f7fa54bd44597bb39);
+            
+        
+
+        marker_eecf220601554c0b9a530a28bf842ad2.bindPopup(popup_5e93bab2c9da5fc15eede984c055ef33)
+        ;
+
+        
+    
+    
+            marker_eecf220601554c0b9a530a28bf842ad2.bindTooltip(
+                `<div>
+                     Processo 0004758-71.2016.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d99a57b3b94d59e0706e21d5403f5bc1 = L.marker(
+                [-22.7340302, -47.6531699],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_32a035c69f35328c94ce4672703c1842 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58437906ba7f53967c709759bc899fed = $(`<div id="html_58437906ba7f53967c709759bc899fed" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0026151-62.2010.8.26.0451<br><b>Conduta:</b> R. conduziu veículo embriagado, com concentração alcoólica comprovada por etilômetro e exame, apresentando odor etílico e incapacidade de manter-se em pé. A alteração da capacidade psicomotora por álcool resultou em manobra imprudente que atingiu veículo regularmente estacionado; em seguida evadiu-se do local. A conduta culposa consiste na direção sob influência de álcool, causando colisão e risco a terceiros.</div>`)[0];
+                popup_32a035c69f35328c94ce4672703c1842.setContent(html_58437906ba7f53967c709759bc899fed);
+            
+        
+
+        marker_d99a57b3b94d59e0706e21d5403f5bc1.bindPopup(popup_32a035c69f35328c94ce4672703c1842)
+        ;
+
+        
+    
+    
+            marker_d99a57b3b94d59e0706e21d5403f5bc1.bindTooltip(
+                `<div>
+                     Processo 0026151-62.2010.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1d8e73023691bafa2215fe9d59d33ddb = L.marker(
+                [-22.7275253, -47.6525458],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_1b722edcb45465da18b2f65ee0930407 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7dcc8e6f78fbb7d3475a6012f05231a6 = $(`<div id="html_7dcc8e6f78fbb7d3475a6012f05231a6" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0007034-46.2014.8.26.0451<br><b>Conduta:</b> O acusado efetuou conversão à esquerda para entrar em estacionamento sem as cautelas exigíveis: não sinalizou a manobra (seta inoperante nas imagens), não observou o fluxo da faixa onde trafegava a motocicleta e realizou a manobra em momento inoportuno, interceptando a trajetória do motociclo. Essa imprudência foi a causa imediata do acidente, independentemente da possível alta velocidade da moto.</div>`)[0];
+                popup_1b722edcb45465da18b2f65ee0930407.setContent(html_7dcc8e6f78fbb7d3475a6012f05231a6);
+            
+        
+
+        marker_1d8e73023691bafa2215fe9d59d33ddb.bindPopup(popup_1b722edcb45465da18b2f65ee0930407)
+        ;
+
+        
+    
+    
+            marker_1d8e73023691bafa2215fe9d59d33ddb.bindTooltip(
+                `<div>
+                     Processo 0007034-46.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7c68ec795cfcc3769fecac5e1616985b = L.marker(
+                [-22.6831256, -47.6870347],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_cc537b0490e472a3bc149a0c3920c485 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dc15a285cbd005177bec3dc516c891ce = $(`<div id="html_dc15a285cbd005177bec3dc516c891ce" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0031178-94.2008.8.26.0451<br><b>Conduta:</b> Não houve registro de colisão, mas houve geração de perigo de dano: o réu (D.) conduzia veículo sem habilitação, praticando conduta culposa por negligência e imprudência. A falta de autorização e provável ausência de preparo técnico aumentaram o risco de ocorrência de acidente, expondo terceiros ao perigo e demonstrando desrespeito às normas de segurança viária.</div>`)[0];
+                popup_cc537b0490e472a3bc149a0c3920c485.setContent(html_dc15a285cbd005177bec3dc516c891ce);
+            
+        
+
+        marker_7c68ec795cfcc3769fecac5e1616985b.bindPopup(popup_cc537b0490e472a3bc149a0c3920c485)
+        ;
+
+        
+    
+    
+            marker_7c68ec795cfcc3769fecac5e1616985b.bindTooltip(
+                `<div>
+                     Processo 0031178-94.2008.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5183e0b27e410846456f0a8c190d7b06 = L.marker(
+                [-22.7836826, -47.6536444],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_a65cb8924ae936dd80e7ad1a6572e560 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca542bd55db8095a00579e3b8890f6b0 = $(`<div id="html_ca542bd55db8095a00579e3b8890f6b0" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0000212-07.2015.8.26.0451<br><b>Conduta:</b> Não se aplica</div>`)[0];
+                popup_a65cb8924ae936dd80e7ad1a6572e560.setContent(html_ca542bd55db8095a00579e3b8890f6b0);
+            
+        
+
+        marker_5183e0b27e410846456f0a8c190d7b06.bindPopup(popup_a65cb8924ae936dd80e7ad1a6572e560)
+        ;
+
+        
+    
+    
+            marker_5183e0b27e410846456f0a8c190d7b06.bindTooltip(
+                `<div>
+                     Processo 0000212-07.2015.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0bfae4920fc36a8b52b62200542497e8 = L.marker(
+                [-22.7205836, -47.6159327],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_23ddd740ab2774619333acfcf7959a4b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21d46a3b84c98df03ccc8e64f29709d6 = $(`<div id="html_21d46a3b84c98df03ccc8e64f29709d6" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0018332-35.2014.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o condutor R.A.P. dirigia com a capacidade psicomotora alterada pela ingestão de álcool; recusou o etilômetro, apresentava sinais claros de embriaguez e perdeu o controle do veículo, colidindo contra a defensa. Trata-se de conduta culposa por imprudência e negligência ao conduzir alcoolizado, gerando perigo e dano efetivo.</div>`)[0];
+                popup_23ddd740ab2774619333acfcf7959a4b.setContent(html_21d46a3b84c98df03ccc8e64f29709d6);
+            
+        
+
+        marker_0bfae4920fc36a8b52b62200542497e8.bindPopup(popup_23ddd740ab2774619333acfcf7959a4b)
+        ;
+
+        
+    
+    
+            marker_0bfae4920fc36a8b52b62200542497e8.bindTooltip(
+                `<div>
+                     Processo 0018332-35.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3a1b196fc41bb166c20e777bc9b235c1 = L.marker(
+                [-22.6947868, -47.6630742],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_6b826a434841ef6a9f92f64c636e65da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb63bcd10f6cb0dcdf1cedd08895d25e = $(`<div id="html_fb63bcd10f6cb0dcdf1cedd08895d25e" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0016985-64.2014.8.26.0451<br><b>Conduta:</b> O acusado ingeriu bebida alcoólica antes de conduzir a motocicleta, tendo concentração de 0,83 mg/L no etilômetro; conduzia em zigue‑zague e apresentava sinais de embriaguez (hálito etílico, olhos avermelhados). A capacidade psicomotora estava afetada pelo álcool, resultando em condução perigosa que motivou a abordagem policial. A conduta culposa decorre da decisão de dirigir sob influência, comprometendo a segurança no trânsito.</div>`)[0];
+                popup_6b826a434841ef6a9f92f64c636e65da.setContent(html_fb63bcd10f6cb0dcdf1cedd08895d25e);
+            
+        
+
+        marker_3a1b196fc41bb166c20e777bc9b235c1.bindPopup(popup_6b826a434841ef6a9f92f64c636e65da)
+        ;
+
+        
+    
+    
+            marker_3a1b196fc41bb166c20e777bc9b235c1.bindTooltip(
+                `<div>
+                     Processo 0016985-64.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9e5388dd521e120d8e944c76095086e8 = L.marker(
+                [-22.7449739, -47.5195124],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_aa1490ee16375307985cf8a69de2daa0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cabf77a4694b6c93f209654d2d52addf = $(`<div id="html_cabf77a4694b6c93f209654d2d52addf" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0003911-74.2013.8.26.0451<br><b>Conduta:</b> O acidente decorreu da condução de caminhão com a capacidade psicomotora alterada pela ingestão de álcool. Testemunhas e guardas relataram odor etílico, andar cambaleante, confissão de que havia bebido e apreensão de garrafa com bebida no veículo. A embriaguez comprometeu o controle do veículo, resultando na colisão contra uma van.</div>`)[0];
+                popup_aa1490ee16375307985cf8a69de2daa0.setContent(html_cabf77a4694b6c93f209654d2d52addf);
+            
+        
+
+        marker_9e5388dd521e120d8e944c76095086e8.bindPopup(popup_aa1490ee16375307985cf8a69de2daa0)
+        ;
+
+        
+    
+    
+            marker_9e5388dd521e120d8e944c76095086e8.bindTooltip(
+                `<div>
+                     Processo 0003911-74.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e9301724f8620190a6b6f025c3e91bcd = L.marker(
+                [-22.7284931, -47.6446095],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_5a0950971e4aa25a7e5674d71c5f7e26 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9390dc818bed6bfa7ca7ab5c61416582 = $(`<div id="html_9390dc818bed6bfa7ca7ab5c61416582" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0031685-65.2002.8.26.0451<br><b>Conduta:</b> A conduta culposa não ficou comprovada: versões conflitantes sobre a velocidade do condutor (uma testemunha relatou alta velocidade; outra declarou velocidade compatível e frenagem), a vítima atravessava fora da faixa, o local tinha intenso fluxo e visibilidade dificultada, e não houve laudo pericial do local. Não se demonstrou de forma suficiente negligência, imprudência ou imperícia do condutor.</div>`)[0];
+                popup_5a0950971e4aa25a7e5674d71c5f7e26.setContent(html_9390dc818bed6bfa7ca7ab5c61416582);
+            
+        
+
+        marker_e9301724f8620190a6b6f025c3e91bcd.bindPopup(popup_5a0950971e4aa25a7e5674d71c5f7e26)
+        ;
+
+        
+    
+    
+            marker_e9301724f8620190a6b6f025c3e91bcd.bindTooltip(
+                `<div>
+                     Processo 0031685-65.2002.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_49ce940e64e596193fef70e24c477cd9 = L.marker(
+                [-22.7378703, -47.5942196],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_c33ce86b2ae47a957a85cd95c6b53618 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_10cede2f421956c2163a1b7df4372013 = $(`<div id="html_10cede2f421956c2163a1b7df4372013" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0013931-90.2014.8.26.0451<br><b>Conduta:</b> A conduta culposa decorreu da opção do condutor (M.A.O.) de dirigir após ingerir bebida alcoólica durante evento, apresentando capacidade psicomotora alterada, comprovada por exame de etilômetro (0,71 mg/l) e exame clínico. Ao assumir a direção nessas condições, criou risco abstrato de perigo à coletividade, praticando comportamento negligente e imprudente ao desrespeitar a proibição legal de conduzir sob influência de álcool.</div>`)[0];
+                popup_c33ce86b2ae47a957a85cd95c6b53618.setContent(html_10cede2f421956c2163a1b7df4372013);
+            
+        
+
+        marker_49ce940e64e596193fef70e24c477cd9.bindPopup(popup_c33ce86b2ae47a957a85cd95c6b53618)
+        ;
+
+        
+    
+    
+            marker_49ce940e64e596193fef70e24c477cd9.bindTooltip(
+                `<div>
+                     Processo 0013931-90.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3705bcbb339052924395b9c2901ca07c = L.marker(
+                [-22.7378703, -47.5942196],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_e6847c1cb8cc9086aab1efb43182104c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d8e4988a4f171a4d16a266708f7d651 = $(`<div id="html_5d8e4988a4f171a4d16a266708f7d651" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0000948-30.2012.8.26.0451<br><b>Conduta:</b> O condutor dirigiu sob efeito de álcool (0,7 g/L), com redução da capacidade psicomotora; ao tentar realizar uma curva à direita perdeu o controle do veículo e capotou quatro vezes. A ingestão de bebida antes de conduzir e a condução desatenta e perigosa configuram a conduta culposa que ocasionou o acidente, expondo a si e a terceiros a risco grave.</div>`)[0];
+                popup_e6847c1cb8cc9086aab1efb43182104c.setContent(html_5d8e4988a4f171a4d16a266708f7d651);
+            
+        
+
+        marker_3705bcbb339052924395b9c2901ca07c.bindPopup(popup_e6847c1cb8cc9086aab1efb43182104c)
+        ;
+
+        
+    
+    
+            marker_3705bcbb339052924395b9c2901ca07c.bindTooltip(
+                `<div>
+                     Processo 0000948-30.2012.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_52852e85ebe12a87f01777208a66fa72 = L.marker(
+                [-22.7154172, -47.6379396],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_0fca585600159d6d50773b594d2bde71 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4cecb60b11595e240f597661e33ff294 = $(`<div id="html_4cecb60b11595e240f597661e33ff294" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0053072-10.2000.8.26.0451<br><b>Conduta:</b> No dia 01/05/2000, por volta de 00h20, a ré (A.R.M.O.N.) conduzia veículo na Avenida Carlos Botelho e, por conduta culposa — negligência, imprudência e/ou desatenção — provocou um acidente de trânsito. Após o evento, afastou‑se do local para evadir‑se da responsabilidade, caracterizando fuga e omissão que agravam a culpabilidade.</div>`)[0];
+                popup_0fca585600159d6d50773b594d2bde71.setContent(html_4cecb60b11595e240f597661e33ff294);
+            
+        
+
+        marker_52852e85ebe12a87f01777208a66fa72.bindPopup(popup_0fca585600159d6d50773b594d2bde71)
+        ;
+
+        
+    
+    
+            marker_52852e85ebe12a87f01777208a66fa72.bindTooltip(
+                `<div>
+                     Processo 0053072-10.2000.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b3707de635be999fc48905854073897f = L.marker(
+                [-22.7016393, -47.6437079],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_fa30b8fc53c32c57a029be57accb2398 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b369abcb6186f0fe10d694b18319c30 = $(`<div id="html_4b369abcb6186f0fe10d694b18319c30" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0005273-77.2014.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o condutor dirigia com capacidade psicomotora alterada por consumo de álcool (0,83 mg/l no etilômetro), tendo ingerido cerca de quatro garrafas de cerveja. Em decorrência da embriaguez e possível sono ao volante, o veículo colidiu com a traseira do automóvel à frente, perdeu o controle e capotou, invadindo a pista contrária. A conduta culposa foi a condução alcoolizada e imprudente, que reduziu a habilidade de direção e causou o acidente.</div>`)[0];
+                popup_fa30b8fc53c32c57a029be57accb2398.setContent(html_4b369abcb6186f0fe10d694b18319c30);
+            
+        
+
+        marker_b3707de635be999fc48905854073897f.bindPopup(popup_fa30b8fc53c32c57a029be57accb2398)
+        ;
+
+        
+    
+    
+            marker_b3707de635be999fc48905854073897f.bindTooltip(
+                `<div>
+                     Processo 0005273-77.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_749c9974a59fd3847350c716e34b8129 = L.marker(
+                [-22.6775694, -47.6815525],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_76393090dce853af57cffd6c04a4bea0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65d65de682e180c9f71e36b3c302bab2 = $(`<div id="html_65d65de682e180c9f71e36b3c302bab2" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 3003091-04.2013.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o condutor, sob efeito de cocaína e álcool, teve a capacidade psicomotora alterada, transitou pela contramão e colidiu com veículo que vinha em sentido contrário. A condução sob influência de substâncias psicoativas e a direção imprudente configuram culpa por omissão do cuidado objetivo e criação de perigo previsível, resultando em lesões e prejuízo material.</div>`)[0];
+                popup_76393090dce853af57cffd6c04a4bea0.setContent(html_65d65de682e180c9f71e36b3c302bab2);
+            
+        
+
+        marker_749c9974a59fd3847350c716e34b8129.bindPopup(popup_76393090dce853af57cffd6c04a4bea0)
+        ;
+
+        
+    
+    
+            marker_749c9974a59fd3847350c716e34b8129.bindTooltip(
+                `<div>
+                     Processo 3003091-04.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5f4384ecc04d0961b3933a29b0ae3447 = L.marker(
+                [-22.7274033, -47.6590858],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_301a39d4cd01a7fb396d321cf0aa6247 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_efca38309f29d519feec748ced593c63 = $(`<div id="html_efca38309f29d519feec748ced593c63" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0003833-80.2013.8.26.0451<br><b>Conduta:</b> Não se aplica</div>`)[0];
+                popup_301a39d4cd01a7fb396d321cf0aa6247.setContent(html_efca38309f29d519feec748ced593c63);
+            
+        
+
+        marker_5f4384ecc04d0961b3933a29b0ae3447.bindPopup(popup_301a39d4cd01a7fb396d321cf0aa6247)
+        ;
+
+        
+    
+    
+            marker_5f4384ecc04d0961b3933a29b0ae3447.bindTooltip(
+                `<div>
+                     Processo 0003833-80.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9e3fbdf8a49da3259b628d64ee778065 = L.marker(
+                [-22.6731059, -47.6973085],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_377d6ee7356128e0e928c13cb00c6647 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef983e925badcc913b1bdc166b5b51b2 = $(`<div id="html_ef983e925badcc913b1bdc166b5b51b2" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0021179-10.2014.8.26.0451<br><b>Conduta:</b> O acidente ocorreu por imperícia do condutor ao perder o controle do veículo ao desviar de uma motocicleta: o pneu atingiu a guia, houve saída de trajetória e colisão contra um poste. Os danos no automóvel indicam velocidade incompatível com a alegada capacidade de frear, demonstrando incapacidade de conter o veículo. Apesar de registro de álcool no bafômetro, a influência foi considerada dúbia; a responsabilização recaiu sobre a condução negligente e imprudente.</div>`)[0];
+                popup_377d6ee7356128e0e928c13cb00c6647.setContent(html_ef983e925badcc913b1bdc166b5b51b2);
+            
+        
+
+        marker_9e3fbdf8a49da3259b628d64ee778065.bindPopup(popup_377d6ee7356128e0e928c13cb00c6647)
+        ;
+
+        
+    
+    
+            marker_9e3fbdf8a49da3259b628d64ee778065.bindTooltip(
+                `<div>
+                     Processo 0021179-10.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9e0bc83c94f7d3dc8220a71a408ee43f = L.marker(
+                [-22.667438, -47.6607267],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_1ad37a7a02de8abfd4527c96e3e1447f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91d68f008013768483d6446498125a11 = $(`<div id="html_91d68f008013768483d6446498125a11" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0004507-87.2015.8.26.0451<br><b>Conduta:</b> Não se aplica</div>`)[0];
+                popup_1ad37a7a02de8abfd4527c96e3e1447f.setContent(html_91d68f008013768483d6446498125a11);
+            
+        
+
+        marker_9e0bc83c94f7d3dc8220a71a408ee43f.bindPopup(popup_1ad37a7a02de8abfd4527c96e3e1447f)
+        ;
+
+        
+    
+    
+            marker_9e0bc83c94f7d3dc8220a71a408ee43f.bindTooltip(
+                `<div>
+                     Processo 0004507-87.2015.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_13df2b94c19200340ccb8447c0bf3ac1 = L.marker(
+                [-22.6747115, -47.70729],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_f4a6f2f4f5ebfa1fcb46cf95241700f6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e833f672aa9edae0f63db1d8d89036d9 = $(`<div id="html_e833f672aa9edae0f63db1d8d89036d9" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0015008-37.2014.8.26.0451<br><b>Conduta:</b> R.C.S. conduziu veículo sem habilitação e sob influência de álcool, em velocidade excessiva ao entrar em curva, perdeu o controle, bateu a roda na guia e capotou várias vezes; excesso de passageiros e ausência de uso de cinto agravaram o risco. A combinação de imprudência, imperícia e embriaguez foi a causa determinante do acidente e do óbito.</div>`)[0];
+                popup_f4a6f2f4f5ebfa1fcb46cf95241700f6.setContent(html_e833f672aa9edae0f63db1d8d89036d9);
+            
+        
+
+        marker_13df2b94c19200340ccb8447c0bf3ac1.bindPopup(popup_f4a6f2f4f5ebfa1fcb46cf95241700f6)
+        ;
+
+        
+    
+    
+            marker_13df2b94c19200340ccb8447c0bf3ac1.bindTooltip(
+                `<div>
+                     Processo 0015008-37.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1f23cfbc3237cf5cb31396b69d26484d = L.marker(
+                [-22.7356368, -47.6312125],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_3ce5d2c4eef3be0d88586bbf5259aba0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f528c5ff044e60b0eabac0b509178289 = $(`<div id="html_f528c5ff044e60b0eabac0b509178289" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 3016309-02.2013.8.26.0451<br><b>Conduta:</b> Não se aplica</div>`)[0];
+                popup_3ce5d2c4eef3be0d88586bbf5259aba0.setContent(html_f528c5ff044e60b0eabac0b509178289);
+            
+        
+
+        marker_1f23cfbc3237cf5cb31396b69d26484d.bindPopup(popup_3ce5d2c4eef3be0d88586bbf5259aba0)
+        ;
+
+        
+    
+    
+            marker_1f23cfbc3237cf5cb31396b69d26484d.bindTooltip(
+                `<div>
+                     Processo 3016309-02.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dc9b5bc6074ba240c715908b4e42b516 = L.marker(
+                [-22.6705672, -47.7006903],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_4d3d22f9f529629b0361602aad3b4d53 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7226da0e568a963fe88375b9a5e99004 = $(`<div id="html_7226da0e568a963fe88375b9a5e99004" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0006158-91.2014.8.26.0451<br><b>Conduta:</b> O acidente decorreu de imprudência do condutor: realizou um retorno sem observar devidamente todos os sentidos da via, olhou apenas para um lado, perdeu o controle do veículo e atropelou a pessoa que atravessava. Conduzia sem habilitação, o que agravou o risco, e evadiu-se do local sem prestar socorro, embora pudesse fazê-lo. A combinação de manobra insegura, falta de observação e direção sem permissão configura a culpa determinante do resultado.</div>`)[0];
+                popup_4d3d22f9f529629b0361602aad3b4d53.setContent(html_7226da0e568a963fe88375b9a5e99004);
+            
+        
+
+        marker_dc9b5bc6074ba240c715908b4e42b516.bindPopup(popup_4d3d22f9f529629b0361602aad3b4d53)
+        ;
+
+        
+    
+    
+            marker_dc9b5bc6074ba240c715908b4e42b516.bindTooltip(
+                `<div>
+                     Processo 0006158-91.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0691151534f2bb871c76355e535ac723 = L.marker(
+                [-22.6735437, -47.7562851],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_e4ec82d7b827d207d6c0299b5c2c6a63 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69b179b90c3ea2b348aca35b15e23b01 = $(`<div id="html_69b179b90c3ea2b348aca35b15e23b01" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0009056-48.2012.8.26.0451<br><b>Conduta:</b> O réu (J.N.S.R.) conduzia veículo embriagado (1,01 mg/L de ar alveolar), com capacidade psicomotora alterada, transitando pelo acostamento em contramão. Ao tentar atravessar a via perdeu o controle e colidiu com o canteiro central. A combinação de ingestão de álcool, direção em contramão e uso do acostamento configurou conduta culposa por imprudência e negligência, causando o acidente.</div>`)[0];
+                popup_e4ec82d7b827d207d6c0299b5c2c6a63.setContent(html_69b179b90c3ea2b348aca35b15e23b01);
+            
+        
+
+        marker_0691151534f2bb871c76355e535ac723.bindPopup(popup_e4ec82d7b827d207d6c0299b5c2c6a63)
+        ;
+
+        
+    
+    
+            marker_0691151534f2bb871c76355e535ac723.bindTooltip(
+                `<div>
+                     Processo 0009056-48.2012.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_eaf21113c4ee40a56d4dbb9df80ee133 = L.marker(
+                [-22.7122486, -47.6565053],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_51af35ea67937f92bbb9691c05ed8487 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5eb6b122606b3e437be1354b8044f43 = $(`<div id="html_d5eb6b122606b3e437be1354b8044f43" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0028229-58.2012.8.26.0451<br><b>Conduta:</b> O réu (R.M.S.) conduziu motocicleta sem habilitação, acelerou ao avistar viatura policial, desrespeitou semáforo vermelho, transitou em alta velocidade e fez ziguezagues entre veículos em via de fluxo intenso, colocando usuários da via em risco. A conduta culposa decorreu da combinação de dirigir sem autorização e prática de manobras perigosas e evasivas, gerando perigo de dano à coletividade.</div>`)[0];
+                popup_51af35ea67937f92bbb9691c05ed8487.setContent(html_d5eb6b122606b3e437be1354b8044f43);
+            
+        
+
+        marker_eaf21113c4ee40a56d4dbb9df80ee133.bindPopup(popup_51af35ea67937f92bbb9691c05ed8487)
+        ;
+
+        
+    
+    
+            marker_eaf21113c4ee40a56d4dbb9df80ee133.bindTooltip(
+                `<div>
+                     Processo 0028229-58.2012.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3e655fabd630ee10ae5bec0a79abb6db = L.marker(
+                [-22.6695357, -47.6875127],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_ce9c9ae722b680a3f9738f05fcd57ebd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c6c87d5dc3bec0a821bad606310ad37b = $(`<div id="html_c6c87d5dc3bec0a821bad606310ad37b" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0017857-84.2011.8.26.0451<br><b>Conduta:</b> A conduta culposa decorreu da imprudência do condutor, que transitava em velocidade incompatível com a curva (limite de 40 km/h) e não observou a sinalização, perdendo o domínio do veículo. Ao adentrar o acostamento o carro derrapou e capotou, causando a morte da vítima. Havia neblina, mas o réu deveria ter reduzido a velocidade; relato de consumo mínimo de bebida alcoólica e desconhecimento da via não eximem sua obrigação de dirigir com cuidado.</div>`)[0];
+                popup_ce9c9ae722b680a3f9738f05fcd57ebd.setContent(html_c6c87d5dc3bec0a821bad606310ad37b);
+            
+        
+
+        marker_3e655fabd630ee10ae5bec0a79abb6db.bindPopup(popup_ce9c9ae722b680a3f9738f05fcd57ebd)
+        ;
+
+        
+    
+    
+            marker_3e655fabd630ee10ae5bec0a79abb6db.bindTooltip(
+                `<div>
+                     Processo 0017857-84.2011.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_95927ca6df1900d9a2fbd9ac6da9397d = L.marker(
+                [-22.6927716, -47.6804773],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_d932b9e8f7e11a1add1bd901e1dfb38f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e6160bf369791ef0fd26adf18e158ca3 = $(`<div id="html_e6160bf369791ef0fd26adf18e158ca3" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0010288-61.2013.8.26.0451<br><b>Conduta:</b> Não se aplica</div>`)[0];
+                popup_d932b9e8f7e11a1add1bd901e1dfb38f.setContent(html_e6160bf369791ef0fd26adf18e158ca3);
+            
+        
+
+        marker_95927ca6df1900d9a2fbd9ac6da9397d.bindPopup(popup_d932b9e8f7e11a1add1bd901e1dfb38f)
+        ;
+
+        
+    
+    
+            marker_95927ca6df1900d9a2fbd9ac6da9397d.bindTooltip(
+                `<div>
+                     Processo 0010288-61.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_60a2537488b93dad2679c0f313850fa3 = L.marker(
+                [-22.7361318, -47.6656515],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_6732b0b53fb40cdc2b87885081b20ed6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_11aaf270092e9190c03f45816a991f66 = $(`<div id="html_11aaf270092e9190c03f45816a991f66" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 3006997-02.2013.8.26.0451<br><b>Conduta:</b> Não se aplica</div>`)[0];
+                popup_6732b0b53fb40cdc2b87885081b20ed6.setContent(html_11aaf270092e9190c03f45816a991f66);
+            
+        
+
+        marker_60a2537488b93dad2679c0f313850fa3.bindPopup(popup_6732b0b53fb40cdc2b87885081b20ed6)
+        ;
+
+        
+    
+    
+            marker_60a2537488b93dad2679c0f313850fa3.bindTooltip(
+                `<div>
+                     Processo 3006997-02.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5e99aca9329f972916f5412aa6813caa = L.marker(
+                [-22.841959, -47.6756345],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_a28c82a3d20c40ddd3fe4b04e60d9ad7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e7881c1584530d4805b72c4b9a35f5d9 = $(`<div id="html_e7881c1584530d4805b72c4b9a35f5d9" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0004675-31.2011.8.26.0451<br><b>Conduta:</b> O condutor, após consumir bebida alcoólica em bar, assumiu a direção com concentração de álcool de 3,7 g/l. A embriaguez reduziu sua capacidade psicomotora, resultando em imprudência e perda de controle do veículo, que subiu na calçada e chocou-se contra árvore, quase atropelando pedestres. A conduta foi culposa por dirigir embriagado e expor terceiros a perigo.</div>`)[0];
+                popup_a28c82a3d20c40ddd3fe4b04e60d9ad7.setContent(html_e7881c1584530d4805b72c4b9a35f5d9);
+            
+        
+
+        marker_5e99aca9329f972916f5412aa6813caa.bindPopup(popup_a28c82a3d20c40ddd3fe4b04e60d9ad7)
+        ;
+
+        
+    
+    
+            marker_5e99aca9329f972916f5412aa6813caa.bindTooltip(
+                `<div>
+                     Processo 0004675-31.2011.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0b1008e7c86178c389de5fbb7585d5e8 = L.marker(
+                [-22.7139757, -47.6370842],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_de307c3dd49c55821eae04c895413d4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da96df6f60a61ae31050baaae9f3f3ec = $(`<div id="html_da96df6f60a61ae31050baaae9f3f3ec" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0018667-25.2012.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o condutor (J.F.C.) dirigia sob forte influência de álcool (concentração superior a 6 decigramas por litro), comprometendo visão, reação e controle do veículo. Colidiu com um carro estacionado e, ao tentar evadir-se, trafegou em contramão e perdeu o controle, atingindo outros veículos. A combinação de embriaguez, imprudência e fuga gerou as colisões e o perigo a terceiros.</div>`)[0];
+                popup_de307c3dd49c55821eae04c895413d4a.setContent(html_da96df6f60a61ae31050baaae9f3f3ec);
+            
+        
+
+        marker_0b1008e7c86178c389de5fbb7585d5e8.bindPopup(popup_de307c3dd49c55821eae04c895413d4a)
+        ;
+
+        
+    
+    
+            marker_0b1008e7c86178c389de5fbb7585d5e8.bindTooltip(
+                `<div>
+                     Processo 0018667-25.2012.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3de8cf3b8acf5b7c50f3f4def3fffd42 = L.marker(
+                [-22.7387367, -47.6521271],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_801777f083f8ce43b92d3fa03f05f8ff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e878790893cae2c03be21a321023be21 = $(`<div id="html_e878790893cae2c03be21a321023be21" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0009854-38.2014.8.26.0451<br><b>Conduta:</b> Veículo transitava em contramão (Avenida do Café entrando na Rua da Glória), invadiu a faixa oposta e colidiu lateralmente com motocicleta que trafegava regularmente, causando queda e lesões graves à passageira J.C.F.S. A conduta foi caracterizada pela imprudência (circulação em contramão) e posterior evasão do local sem prestar socorro.</div>`)[0];
+                popup_801777f083f8ce43b92d3fa03f05f8ff.setContent(html_e878790893cae2c03be21a321023be21);
+            
+        
+
+        marker_3de8cf3b8acf5b7c50f3f4def3fffd42.bindPopup(popup_801777f083f8ce43b92d3fa03f05f8ff)
+        ;
+
+        
+    
+    
+            marker_3de8cf3b8acf5b7c50f3f4def3fffd42.bindTooltip(
+                `<div>
+                     Processo 0009854-38.2014.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_06865b793ab5859bb5bc21ab28389fdf = L.marker(
+                [-22.7434431, -47.5295613],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_e017aaab1a3093268a7f4fbfcc812a75 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94b629213befaab82eb20756a49e63be = $(`<div id="html_94b629213befaab82eb20756a49e63be" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 3004415-29.2013.8.26.0451<br><b>Conduta:</b> Não se aplica</div>`)[0];
+                popup_e017aaab1a3093268a7f4fbfcc812a75.setContent(html_94b629213befaab82eb20756a49e63be);
+            
+        
+
+        marker_06865b793ab5859bb5bc21ab28389fdf.bindPopup(popup_e017aaab1a3093268a7f4fbfcc812a75)
+        ;
+
+        
+    
+    
+            marker_06865b793ab5859bb5bc21ab28389fdf.bindTooltip(
+                `<div>
+                     Processo 3004415-29.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1815ed642c1c398576057b74a9a215f7 = L.marker(
+                [-22.5080741, -47.7768962],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_401a68d387b60079ee17cc6189f07cb0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e45780d5c40beb8141711cd97d3b65d3 = $(`<div id="html_e45780d5c40beb8141711cd97d3b65d3" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0015929-98.2011.8.26.0451<br><b>Conduta:</b> O acidente decorreu da condução negligente e imprudente do condutor, que dirigia sob forte influência de álcool (1,5 g/L), apresentando sinais de embriaguez e alteração psicomotora. Conduziu em zigue‑zague, pela contramão e pelo acostamento, desobedeceu ordem de parada e quase atropelou um policial. Essa combinação de alcoolização e direção anormal criou risco previsível, caracterizando conduta culposa por negligência e imprudência, culminando no acidente.</div>`)[0];
+                popup_401a68d387b60079ee17cc6189f07cb0.setContent(html_e45780d5c40beb8141711cd97d3b65d3);
+            
+        
+
+        marker_1815ed642c1c398576057b74a9a215f7.bindPopup(popup_401a68d387b60079ee17cc6189f07cb0)
+        ;
+
+        
+    
+    
+            marker_1815ed642c1c398576057b74a9a215f7.bindTooltip(
+                `<div>
+                     Processo 0015929-98.2011.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_97182c45b9061411683921bd89902e89 = L.marker(
+                [-22.5163917, -47.7764471],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_c614f9ce32f5773a819259cd9a3478d9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_81297f512c0b0c9e2e290c51943ac8b4 = $(`<div id="html_81297f512c0b0c9e2e290c51943ac8b4" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0015206-79.2011.8.26.0451<br><b>Conduta:</b> O réu conduziu veículo sob forte influência de álcool (3,3 g/l), apresentando sinais evidentes de embriaguez que diminuíram sua atenção, equilíbrio e capacidade de reação. Ao desviar para não atropelar crianças na via, perdeu o controle e colidiu contra um poste. A conduta é culposa por imprudência e negligência: dirigir alcoolizado, violando o dever de cuidado e normas de trânsito, resultando no acidente.</div>`)[0];
+                popup_c614f9ce32f5773a819259cd9a3478d9.setContent(html_81297f512c0b0c9e2e290c51943ac8b4);
+            
+        
+
+        marker_97182c45b9061411683921bd89902e89.bindPopup(popup_c614f9ce32f5773a819259cd9a3478d9)
+        ;
+
+        
+    
+    
+            marker_97182c45b9061411683921bd89902e89.bindTooltip(
+                `<div>
+                     Processo 0015206-79.2011.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7292b2636a79099a7a73610b9a04dae9 = L.marker(
+                [-22.6704717, -47.6957735],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_d4030500c4ac7746681cccaa12c373ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d4fa99d261584e650132bf4159e76f26 = $(`<div id="html_d4fa99d261584e650132bf4159e76f26" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0014843-29.2010.8.26.0451<br><b>Conduta:</b> J.J.R. realizou conversão à esquerda sem frear completamente nem se certificar da ausência de veículos, interceptando a trajetória da motocicleta conduzida por F.J.C. A perícia indicou marca de frenagem e ponto de impacto compatível com manobra iniciada sem parada, evidenciando imprudência. A ausência de habilitação agrava a conduta; eventual falha no farol da moto não afasta a responsabilidade penal predominante da condutora.</div>`)[0];
+                popup_d4030500c4ac7746681cccaa12c373ea.setContent(html_d4fa99d261584e650132bf4159e76f26);
+            
+        
+
+        marker_7292b2636a79099a7a73610b9a04dae9.bindPopup(popup_d4030500c4ac7746681cccaa12c373ea)
+        ;
+
+        
+    
+    
+            marker_7292b2636a79099a7a73610b9a04dae9.bindTooltip(
+                `<div>
+                     Processo 0014843-29.2010.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_29f90eccbbf7e1ef2bab09fa8f13ef5f = L.marker(
+                [-22.7205836, -47.6159327],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_4eae97e118dd76c5be938ce0cdfde056 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18c9de7647e26f53b172be4ade146fcd = $(`<div id="html_18c9de7647e26f53b172be4ade146fcd" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0026322-53.2009.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o réu conduzia sem habilitação e com elevada concentração de álcool no sangue (2,5 g/l), comprometendo sua capacidade psicomotora. Em razão da embriaguez não manteve distância segura e colidiu com a traseira de um caminhão, demonstrando imprudência e negligência na condução.</div>`)[0];
+                popup_4eae97e118dd76c5be938ce0cdfde056.setContent(html_18c9de7647e26f53b172be4ade146fcd);
+            
+        
+
+        marker_29f90eccbbf7e1ef2bab09fa8f13ef5f.bindPopup(popup_4eae97e118dd76c5be938ce0cdfde056)
+        ;
+
+        
+    
+    
+            marker_29f90eccbbf7e1ef2bab09fa8f13ef5f.bindTooltip(
+                `<div>
+                     Processo 0026322-53.2009.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_be0ac85c2ff0599d7b093a41884108f4 = L.marker(
+                [-22.7067675, -47.65435069999999],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_14af655aadcf1685ffe2b4bdd6a49304 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_72dcd535e27aa6b77ef9c31c77c9c994 = $(`<div id="html_72dcd535e27aa6b77ef9c31c77c9c994" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 3005188-74.2013.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o condutor, sem habilitação, dirigia apressadamente e não observou a vítima que terminava a travessia, deixando de reduzir a velocidade ou adotar cautela em local próximo a ponto de ônibus e hospital. Agiu com imprudência, causou lesões graves e evadiu-se do local, além de não prestar socorro quando poderia fazê-lo, caracterizando a culpabilidade.</div>`)[0];
+                popup_14af655aadcf1685ffe2b4bdd6a49304.setContent(html_72dcd535e27aa6b77ef9c31c77c9c994);
+            
+        
+
+        marker_be0ac85c2ff0599d7b093a41884108f4.bindPopup(popup_14af655aadcf1685ffe2b4bdd6a49304)
+        ;
+
+        
+    
+    
+            marker_be0ac85c2ff0599d7b093a41884108f4.bindTooltip(
+                `<div>
+                     Processo 3005188-74.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_55b0a2195435221adf4e9d5fab75a9c6 = L.marker(
+                [-22.7205836, -47.6159327],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_0a20f6c7ccefa66a2736eb021ec5c75f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_80f57903f2ecb76e05182bbaa82a7da2 = $(`<div id="html_80f57903f2ecb76e05182bbaa82a7da2" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0010291-16.2013.8.26.0451<br><b>Conduta:</b> Segundo a denúncia e testemunhos, o acidente decorreu de uma ultrapassagem realizada em local proibido (faixa contínua), com imprudência do condutor do automóvel, que colidiu com a motocicleta que fazia conversão à esquerda. A ultrapassagem indevida e a violação da sinalização configuram a conduta culposa apontada como causa do evento.</div>`)[0];
+                popup_0a20f6c7ccefa66a2736eb021ec5c75f.setContent(html_80f57903f2ecb76e05182bbaa82a7da2);
+            
+        
+
+        marker_55b0a2195435221adf4e9d5fab75a9c6.bindPopup(popup_0a20f6c7ccefa66a2736eb021ec5c75f)
+        ;
+
+        
+    
+    
+            marker_55b0a2195435221adf4e9d5fab75a9c6.bindTooltip(
+                `<div>
+                     Processo 0010291-16.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b324f4e04c2178df6b344ec9413ae0f8 = L.marker(
+                [-22.7336433, -47.6654555],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_1578ea6032f273f01f4d7b0aee5aae61 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b319c19fbb1a2477dc021495e8bc289 = $(`<div id="html_9b319c19fbb1a2477dc021495e8bc289" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0021576-84.2005.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o réu conduzia veículo automotor sem a devida habilitação e sob influência de álcool. A combinação de dirigir sem permissão e alcoolizado configurou negligência e imprudência, expondo terceiros a risco e resultando em acidente culposo.</div>`)[0];
+                popup_1578ea6032f273f01f4d7b0aee5aae61.setContent(html_9b319c19fbb1a2477dc021495e8bc289);
+            
+        
+
+        marker_b324f4e04c2178df6b344ec9413ae0f8.bindPopup(popup_1578ea6032f273f01f4d7b0aee5aae61)
+        ;
+
+        
+    
+    
+            marker_b324f4e04c2178df6b344ec9413ae0f8.bindTooltip(
+                `<div>
+                     Processo 0021576-84.2005.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6827963424b8bedc418010dc698265a6 = L.marker(
+                [-22.7139101, -47.65227609999999],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_45df98c4b5114ff3087fa830bb051b4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2745612523c339d7b35461207e3530f8 = $(`<div id="html_2745612523c339d7b35461207e3530f8" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0021909-89.2012.8.26.0451<br><b>Conduta:</b> O réu trafegava em alta velocidade em via com limite de 30 km/h, não percebeu ou não teve reação a tempo ao pedestre que atravessava na faixa, mesmo havendo iluminação pública e semáforos funcionando. A imprudência (excesso de velocidade) e perda de controle do veículo impediram a frenagem, culminando no atropelamento e morte da vítima.</div>`)[0];
+                popup_45df98c4b5114ff3087fa830bb051b4a.setContent(html_2745612523c339d7b35461207e3530f8);
+            
+        
+
+        marker_6827963424b8bedc418010dc698265a6.bindPopup(popup_45df98c4b5114ff3087fa830bb051b4a)
+        ;
+
+        
+    
+    
+            marker_6827963424b8bedc418010dc698265a6.bindTooltip(
+                `<div>
+                     Processo 0021909-89.2012.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a9f329938396e089547afbdbdb72413f = L.marker(
+                [-22.7334065, -47.6411773],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_2b3568f425af355d4705e503f65d1b19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c2022133901b6c88f46c558446c7f257 = $(`<div id="html_c2022133901b6c88f46c558446c7f257" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0035755-13.2011.8.26.0451<br><b>Conduta:</b> Não se aplica</div>`)[0];
+                popup_2b3568f425af355d4705e503f65d1b19.setContent(html_c2022133901b6c88f46c558446c7f257);
+            
+        
+
+        marker_a9f329938396e089547afbdbdb72413f.bindPopup(popup_2b3568f425af355d4705e503f65d1b19)
+        ;
+
+        
+    
+    
+            marker_a9f329938396e089547afbdbdb72413f.bindTooltip(
+                `<div>
+                     Processo 0035755-13.2011.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c0f71b0d658c8d2c4f04819fbc5ebf7e = L.marker(
+                [-22.747121, -47.6656512],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_3e8f40311605e6b8a44b1762a0f18e89 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3dddf6f9839a2a1fc8f5f75dab8b35f8 = $(`<div id="html_3dddf6f9839a2a1fc8f5f75dab8b35f8" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0021687-92.2010.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o réu conduzia motocicleta sem habilitação e, ao avistar uma viatura policial, acelerou para fugir, trafegando em alta velocidade e na contramão. Por imprudência e imperícia perdeu o controle do veículo e colidiu com uma Kombi, gerando perigo de dano (quase atropelou um bebê). A culpabilidade decorre da falta de habilitação, da fuga em velocidade excessiva e da condução perigosa.</div>`)[0];
+                popup_3e8f40311605e6b8a44b1762a0f18e89.setContent(html_3dddf6f9839a2a1fc8f5f75dab8b35f8);
+            
+        
+
+        marker_c0f71b0d658c8d2c4f04819fbc5ebf7e.bindPopup(popup_3e8f40311605e6b8a44b1762a0f18e89)
+        ;
+
+        
+    
+    
+            marker_c0f71b0d658c8d2c4f04819fbc5ebf7e.bindTooltip(
+                `<div>
+                     Processo 0021687-92.2010.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_165e38b0c6fe581dbc10c08d983a452b = L.marker(
+                [-22.6947868, -47.6630742],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_691cb9b7e104c75c1172dc842fd74899 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1fc9b0bdcf417ac313962072a10d7a2f = $(`<div id="html_1fc9b0bdcf417ac313962072a10d7a2f" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 3002073-45.2013.8.26.0451<br><b>Conduta:</b> O réu conduziu veículo sob influência de álcool, com concentração aferida no etilômetro de 0,8 g/l e sinais clínicos de embriaguez (marcha ebriosa, hálito etílico, alteração da coordenação). Essa alteração psicomotora reduziu sua capacidade de atenção e reação, resultando em colisão traseira contra outro automóvel que provocou ferimentos leves em ocupantes, inclusive uma criança. A conduta imprudente de dirigir embriagado causou o acidente.</div>`)[0];
+                popup_691cb9b7e104c75c1172dc842fd74899.setContent(html_1fc9b0bdcf417ac313962072a10d7a2f);
+            
+        
+
+        marker_165e38b0c6fe581dbc10c08d983a452b.bindPopup(popup_691cb9b7e104c75c1172dc842fd74899)
+        ;
+
+        
+    
+    
+            marker_165e38b0c6fe581dbc10c08d983a452b.bindTooltip(
+                `<div>
+                     Processo 3002073-45.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b9b4b79cf2624dd1040637996a2fdca2 = L.marker(
+                [-22.6862292, -47.6723795],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_f70f84cddc1cd698b46e54bc1aa93e69 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5797d5325cbef8f9420ee2688a91f25f = $(`<div id="html_5797d5325cbef8f9420ee2688a91f25f" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0029081-19.2011.8.26.0451<br><b>Conduta:</b> O acidente decorreu de condução culposa do motorista, ou seja, atuação negligente/imprudente ao dirigir na rodovia, o que resultou na colisão. Em seguida o condutor evadiu-se do local para evitar responsabilização. A culpabilidade está na falta de cuidado na condução e na fuga posterior.</div>`)[0];
+                popup_f70f84cddc1cd698b46e54bc1aa93e69.setContent(html_5797d5325cbef8f9420ee2688a91f25f);
+            
+        
+
+        marker_b9b4b79cf2624dd1040637996a2fdca2.bindPopup(popup_f70f84cddc1cd698b46e54bc1aa93e69)
+        ;
+
+        
+    
+    
+            marker_b9b4b79cf2624dd1040637996a2fdca2.bindTooltip(
+                `<div>
+                     Processo 0029081-19.2011.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_130c928329b97fe7c5938011118586b8 = L.marker(
+                [-22.7238759, -47.6500094],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_ee563abbf36f61c1273cc13da488dad7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b515ee8c0218d39867199f1fefb69075 = $(`<div id="html_b515ee8c0218d39867199f1fefb69075" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0035029-05.2012.8.26.0451<br><b>Conduta:</b> A colisão ocorreu porque o condutor do caminhão avançou o semáforo vermelho na confluência entre Avenida Armando Salles e Rua São José, ingressando no cruzamento quando a motocicleta tinha sinal verde. Ao não respeitar a sinalização e não reduzir, especialmente por conduzir veículo pesado carregado com terra, ele agiu com imprudência, causando a colisão que resultou no esmagamento e morte da condutora da motocicleta.</div>`)[0];
+                popup_ee563abbf36f61c1273cc13da488dad7.setContent(html_b515ee8c0218d39867199f1fefb69075);
+            
+        
+
+        marker_130c928329b97fe7c5938011118586b8.bindPopup(popup_ee563abbf36f61c1273cc13da488dad7)
+        ;
+
+        
+    
+    
+            marker_130c928329b97fe7c5938011118586b8.bindTooltip(
+                `<div>
+                     Processo 0035029-05.2012.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d3c1c69144b4c0f5ca9553b6a614f19c = L.marker(
+                [-22.7147908, -47.6671116],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_81f09e6d0cc307c21e9e8087449ac4e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd438d69faf09ceb3c35cc94f304f6f1 = $(`<div id="html_dd438d69faf09ceb3c35cc94f304f6f1" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0035745-37.2009.8.26.0451<br><b>Conduta:</b> Não restou comprovada a culpa do técnico responsável (B.A.M.J.); testemunhas e perícia indicaram existência de sinalização móvel (placas e cones) no local. O laudo pericial concluiu que o acidente ocorreu por velocidade incompatível do condutor (M.H.M.), com deslocamento e danos compatíveis. Assim, não se demonstrou a conduta negligente do acusado quanto à sinalização.</div>`)[0];
+                popup_81f09e6d0cc307c21e9e8087449ac4e2.setContent(html_dd438d69faf09ceb3c35cc94f304f6f1);
+            
+        
+
+        marker_d3c1c69144b4c0f5ca9553b6a614f19c.bindPopup(popup_81f09e6d0cc307c21e9e8087449ac4e2)
+        ;
+
+        
+    
+    
+            marker_d3c1c69144b4c0f5ca9553b6a614f19c.bindTooltip(
+                `<div>
+                     Processo 0035745-37.2009.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1b6cfe5e280df9412a7d33f179723720 = L.marker(
+                [-22.7414095, -47.5924642],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_20fc02bac1bb4ede27b887bafe263aeb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d7be473271924acbd4760239d24f7707 = $(`<div id="html_d7be473271924acbd4760239d24f7707" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 3001614-43.2013.8.26.0451<br><b>Conduta:</b> Segundo a denúncia e o laudo pericial, a conduta culposa foi efetuar conversão à esquerda sem aguardar momento oportuno nem observar cautelas especiais, interceptando a trajetória da motocicleta que trafegava em sentido contrário. Ao não garantir segurança antes da manobra, a condutora deu causa à colisão que resultou no óbito.</div>`)[0];
+                popup_20fc02bac1bb4ede27b887bafe263aeb.setContent(html_d7be473271924acbd4760239d24f7707);
+            
+        
+
+        marker_1b6cfe5e280df9412a7d33f179723720.bindPopup(popup_20fc02bac1bb4ede27b887bafe263aeb)
+        ;
+
+        
+    
+    
+            marker_1b6cfe5e280df9412a7d33f179723720.bindTooltip(
+                `<div>
+                     Processo 3001614-43.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_04793dbf97ff78cd08f4277ddce2a1b9 = L.marker(
+                [-22.7284931, -47.6446095],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_9d318a74b4047dd50791b5bb046f1eb3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f5f68936d8bfc327e55badf40cf4eb7e = $(`<div id="html_f5f68936d8bfc327e55badf40cf4eb7e" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 3016033-68.2013.8.26.0451<br><b>Conduta:</b> Ao conduzir embriagado, em alta velocidade e em contramão, o agente não observou a preferência no cruzamento, colidiu com motocicleta causando lesões e, em seguida, atingiu veículos estacionados. Fugiu do local sem prestar socorro. A imprudência e a condução sob efeito de álcool foram as causas culposas do acidente.</div>`)[0];
+                popup_9d318a74b4047dd50791b5bb046f1eb3.setContent(html_f5f68936d8bfc327e55badf40cf4eb7e);
+            
+        
+
+        marker_04793dbf97ff78cd08f4277ddce2a1b9.bindPopup(popup_9d318a74b4047dd50791b5bb046f1eb3)
+        ;
+
+        
+    
+    
+            marker_04793dbf97ff78cd08f4277ddce2a1b9.bindTooltip(
+                `<div>
+                     Processo 3016033-68.2013.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_55a40e4dfffc461f094711945819d22c = L.marker(
+                [-22.7213125, -47.6390478],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_ff90449563994b7b8dd2bd3ad84b26c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5c617cae60e2b29f8691edd90b815fe = $(`<div id="html_e5c617cae60e2b29f8691edd90b815fe" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0005330-37.2010.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o condutor do Corsa realizou manobra de conversão/retorno sem aguardar momento seguro, transitando supostamente pela contramão ou cruzando a via preferencial e interceptando a trajetória do veículo Palio que trafegava regularmente. Houve falta de observância das cautelas exigidas para a manobra (verificação de tráfego e respeito à prioridade), resultando na colisão que causou o traumatismo cranioencefálico fatal da vítima.</div>`)[0];
+                popup_ff90449563994b7b8dd2bd3ad84b26c9.setContent(html_e5c617cae60e2b29f8691edd90b815fe);
+            
+        
+
+        marker_55a40e4dfffc461f094711945819d22c.bindPopup(popup_ff90449563994b7b8dd2bd3ad84b26c9)
+        ;
+
+        
+    
+    
+            marker_55a40e4dfffc461f094711945819d22c.bindTooltip(
+                `<div>
+                     Processo 0005330-37.2010.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b7b4a165585c2018e02b08aff86a920e = L.marker(
+                [-22.7213897, -47.644731],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_05903d34907fe42a358dba0745764cbb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1ed8fdff1db0ee1753dd54e5812269d = $(`<div id="html_d1ed8fdff1db0ee1753dd54e5812269d" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0025204-08.2010.8.26.0451<br><b>Conduta:</b> O condutor (R.) dirigia sob efeito de álcool (etilômetro apontou 0,40 ml/l), em velocidade excessiva, ultrapassando um comboio de motocicletas. Ao retornar à pista da direita efetuou mudança de faixa sem cautela, não percebeu o veículo da frente (V.) e colidiu com sua traseira, arrastando a motocicleta por cerca de 200 m. A culpa decorre da embriaguez, da velocidade incompatível e da manobra imprudente que reduziram sua capacidade de observação e frenagem.</div>`)[0];
+                popup_05903d34907fe42a358dba0745764cbb.setContent(html_d1ed8fdff1db0ee1753dd54e5812269d);
+            
+        
+
+        marker_b7b4a165585c2018e02b08aff86a920e.bindPopup(popup_05903d34907fe42a358dba0745764cbb)
+        ;
+
+        
+    
+    
+            marker_b7b4a165585c2018e02b08aff86a920e.bindTooltip(
+                `<div>
+                     Processo 0025204-08.2010.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6adf5df2fc9c76a13d3a28f0043d2862 = L.marker(
+                [-22.7589715, -47.676853],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_a5a7aafe1ed7696d8f93ddedb62538e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f21c115a78174b62539a58a9477abc46 = $(`<div id="html_f21c115a78174b62539a58a9477abc46" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0017871-73.2008.8.26.0451<br><b>Conduta:</b> Condução culposa por imprudência, negligência e imperícia: o condutor pilotava sem habilitação e sem capacete, possivelmente sob efeito de álcool, a aproximadamente 40 km/h em via de bairro estreita com vários veículos estacionados. Não reduziu a velocidade nem freou ou desviou a tempo ao surgir a vítima entre carros, falhando em redobrar cuidados exigíveis em local de maior risco, o que resultou no atropelamento.</div>`)[0];
+                popup_a5a7aafe1ed7696d8f93ddedb62538e8.setContent(html_f21c115a78174b62539a58a9477abc46);
+            
+        
+
+        marker_6adf5df2fc9c76a13d3a28f0043d2862.bindPopup(popup_a5a7aafe1ed7696d8f93ddedb62538e8)
+        ;
+
+        
+    
+    
+            marker_6adf5df2fc9c76a13d3a28f0043d2862.bindTooltip(
+                `<div>
+                     Processo 0017871-73.2008.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fbd728ca5df50724862fab55436a62a4 = L.marker(
+                [-22.7291325, -47.6499613],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_7a4f8e923ea2ffe640206dbf7b6ac4c3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_595dd3a240e7e73e72349eda04f7a056 = $(`<div id="html_595dd3a240e7e73e72349eda04f7a056" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0004938-63.2011.8.26.0451<br><b>Conduta:</b> O acidente ocorreu quando o condutor da via secundária (E.W.F.) avançou além da faixa de parada para obter visibilidade e interceptou a trajetória da motocicleta da vítima (A.P.E.), que trafegava em velocidade excessiva. Contudo, a principal causa foi a negligência da administração pública na sinalização e o ponto cego no local, de modo que não se demonstrou, com certeza, a culpa do condutor.</div>`)[0];
+                popup_7a4f8e923ea2ffe640206dbf7b6ac4c3.setContent(html_595dd3a240e7e73e72349eda04f7a056);
+            
+        
+
+        marker_fbd728ca5df50724862fab55436a62a4.bindPopup(popup_7a4f8e923ea2ffe640206dbf7b6ac4c3)
+        ;
+
+        
+    
+    
+            marker_fbd728ca5df50724862fab55436a62a4.bindTooltip(
+                `<div>
+                     Processo 0004938-63.2011.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_16ce14db06070d2bfaa09d5991447f8e = L.marker(
+                [-22.622376, -47.7423492],
+                {
+}
+            ).addTo(marker_cluster_32c4d6d4195a215b77277b65dd675f58);
+        
+    
+        var popup_b38301924468219dc0f999ef860d1d08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1670ebce735a2b510fbfdff0f912f33 = $(`<div id="html_d1670ebce735a2b510fbfdff0f912f33" style="width: 100.0%; height: 100.0%;"><b>Processo:</b> 0034560-56.2012.8.26.0451<br><b>Conduta:</b> O acidente ocorreu porque o condutor (C.S.) realizou conversão à esquerda sem as cautelas exigidas pelo CTB, interceptando a trajetória da motocicleta (M.P.). Não houve indicação clara nem verificação eficaz da via contrária; ao ingressar na Rua Virgínia Vitorelli Correr obstruiu bruscamente o percurso da moto, resultando na colisão. Configura culpa por imprudência/negligência na execução da manobra.</div>`)[0];
+                popup_b38301924468219dc0f999ef860d1d08.setContent(html_d1670ebce735a2b510fbfdff0f912f33);
+            
+        
+
+        marker_16ce14db06070d2bfaa09d5991447f8e.bindPopup(popup_b38301924468219dc0f999ef860d1d08)
+        ;
+
+        
+    
+    
+            marker_16ce14db06070d2bfaa09d5991447f8e.bindTooltip(
+                `<div>
+                     Processo 0034560-56.2012.8.26.0451
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_32c4d6d4195a215b77277b65dd675f58.addTo(map_2650dc9370469ae1dd91453715ff652b);
+        
+</script>
+</html>
